@@ -1,0 +1,47 @@
+.layout-print() {};
+
+.layout-xs() {};
+.layout-sm() {};
+.layout-md() {};
+.layout-lg() {};
+
+// Background colors
+
+@b-body:        #fef4ea;
+@b-head:        #fff;
+
+// Colors
+
+@c-text:        #333;
+@c-head:        #f89624;
+@c-dark:        #6c4123;
+@c-lite:        #fbd5a6;
+@c-gray:        #d3d7d9;
+
+// Sizes
+
+@s-padding:     12px;
+@s-font:        16px;
+@s-head:        60px;
+@s-head-border: 5px;
+
+// [MIXIN] GPU-BOOST
+
+.render-gpu() {
+    transform: translateZ(0);
+}
+
+// [MIXIN] VERTICAL MIDDLE CENTERING
+
+.inline-middle() {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:before {
+        display: inline-block;
+        content: " ";
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+    }
+}

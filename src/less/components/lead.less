@@ -1,0 +1,21 @@
+@import (reference) "../lib/config.less";
+
+.layout-xs() {
+    #lead {
+        .count, .text {
+            display: block;
+        }
+        .count {
+            font-size: 3em;
+            line-height: 2em;
+        }
+        .text {
+            font-size: (24 / 16em);
+            line-height: 3em;
+            font-style: normal;
+            text-transform: lowercase;
+            margin-top: -1em;
+            opacity: .5;
+        }
+    }
+}

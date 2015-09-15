@@ -1,0 +1,95 @@
+@import (reference) "../lib/config.less";
+
+.layout-xs() {
+    .slider {
+        position: relative;
+        height: 550px;
+        overflow: hidden;
+        z-index: 1;
+
+        .page {
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            z-index: 2;
+
+            .list {
+                border-radius: @s-font;
+                height: @s-font * 2;
+                padding: 5px 8px;
+                background: fade(#000, 50%);
+                margin-left: -100%;
+            }
+            .item, .selector {
+                border-radius: 50%;
+            }
+            .item {
+                background: #fff;
+                padding: 2px;
+                vertical-align: baseline;
+                width: 16px;
+                height: 16px;
+
+                & + .item {
+                    margin-left: 5px;
+                }
+            }
+            .selector {
+                display: block;
+                width: 12px;
+                height: 12px;
+                background: #3E50B4;
+                opacity: 0;
+                transition: opacity .2s ease-in-out;
+                cursor: pointer;
+            }
+        }
+        .module {
+            position: relative;
+            z-index: 1;
+            transition: transform .2s ease-in-out;
+
+            .item {
+                backface-visibility: hidden;
+                overflow: hidden;
+                max-width: 100%;
+            }
+        }
+        .image {
+            width: 200px;
+            height: auto;
+        }
+        .text {
+            padding: @s-padding (@s-padding * 2);
+            text-align: left;
+            opacity: .8;
+        }
+    }
+
+    // Pager mechanism
+
+    #slider-0-0:checked {
+        & ~ .page .selector[for="slider-0-0"] {
+            opacity: 1;
+        }
+        & ~ .module {
+            transform: translate(0,0) translateZ(0);
+        }
+    }
+    #slider-0-1:checked {
+        & ~ .page .selector[for="slider-0-1"] {
+            opacity: 1;
+        }
+        & ~ .module {
+            transform: translate(-100%,0) translateZ(0);
+        }
+    }
+    #slider-0-2:checked {
+        & ~ .page .selector[for="slider-0-2"] {
+            opacity: 1;
+        }
+        & ~ .module {
+            transform: translate(-200%,0) translateZ(0);
+        }
+    }
+}

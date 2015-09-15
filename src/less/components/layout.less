@@ -1,0 +1,221 @@
+@import (reference) "../lib/config.less";
+
+/**
+ * [COMPONENT] LAYOUT
+ *
+ * Common layout structure and universal style classes
+ * library
+ *
+ * @author Székely Ádám <aszekely@brainsum.com>
+ *
+ */
+.layout-xs() {
+    *, *:before, *:after {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+    }
+    *:active, *:focus {
+        outline: 0;
+    }
+    html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        text-rendering: optimizeLegibility;
+        font-size: 100%;
+    }
+    body {
+        -webkit-overflow-scrolling: touch;
+
+        position: relative;
+        background: @b-body;
+        font: 300 @s-font "Open Sans",Helvetica,Arial,sans-serif;
+        line-height: (21/13em);
+        text-align: center;
+        color: #333;
+        overflow-y: scroll;
+        will-change: scroll-position;
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    ul, ol {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        display: block;
+        margin: 0 0 1em;
+        padding: 0;
+    }
+    #main {
+        position: relative;
+        height: 100%;
+        padding-top: @s-head + @s-head-border;
+        z-index: 1;
+    }
+    #main-container {
+        height: 100%;
+        transform: translateZ(0);
+    }
+    .clearfix {
+        *zoom: 1;
+
+        &:before, &:after {
+            display: table;
+            content: " ";
+            height: 0;
+            font: 0/0 monospace;
+            overflow: hidden;
+        }
+        &:after {
+            clear: both;
+        }
+    }
+    .container {
+        width: 880px;
+        margin: 0 auto;
+        padding: 0 @s-padding;
+    }
+    .inline {
+        display: inline-block;
+        vertical-align: middle;
+        white-space: normal;
+        *display: inline;
+        *zoom: 1;
+    }
+    .inline-container:extend(.inline all) {
+        white-space: nowrap;
+
+        &:before {
+            display: inline-block;
+            content: " ";
+            width: 0;
+            height: 100%;
+            vertical-align: middle;
+        }
+        .inline {
+            vertical-align: middle;
+        }
+    }
+    .hidden {
+        display: none !important;
+    }
+    .bold {
+        font-weight: 700 !important;
+    }
+    .center {
+        text-align: center;
+    }
+    .block {
+        position: relative;
+
+        .title {
+            font-size: 2em;
+            font-weight: 700;
+            color: @c-dark;
+            margin: 0;
+            padding: 1em 0;
+        }
+        &-lead {
+            background: @c-lite url(../img/bg-yellow-lite.jpg) no-repeat scroll center 0;
+        }
+        &-fade {
+            background: @c-gray url(../img/bg-yellow-substract.jpg) no-repeat scroll center center;
+        }
+        &-dark {
+            background: @c-dark;
+            color: fade(#fff, 80%);
+        }
+    }
+    .content {
+        text-align: left;
+
+        p {
+            display: block;
+            margin: 0;
+            padding: 0 0 2em;
+        }
+    }
+    .view {
+        width: 100%;
+        height: 100%;
+    }
+    .btn:extend(.inline all) {
+        margin-bottom: 1em;
+        border: 1px solid fade(@c-dark, 50%);
+        border-radius: 3px;
+        color: @c-dark;
+        padding: 0 @s-padding;
+        line-height: 2em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            background: fade(@c-dark, 10%);
+        }
+        &-next:after {
+            display: inline-block;
+            line-height: .8em;
+            content: "→";
+            padding-left: round(@s-font / 2);
+        }
+    }
+    .xs-1 {
+        width: 8.3333%;
+        *width: 8.3023%
+    }
+    .xs-2 {
+        width: 16.6667%;
+        *width: 16.6357%
+    }
+    .xs-3 {
+        width: 25%;
+        *width: 24.969%
+    }
+    .xs-4 {
+        width: 33.3333%;
+        *width: 33.3023%
+    }
+    .xs-5 {
+        width: 41.6667%;
+        *width: 41.6357%
+    }
+    .xs-6 {
+        width: 50%;
+        *width: 49.969%
+    }
+    .xs-7 {
+        width: 58.3333%;
+        *width: 58.3023%
+    }
+    .xs-8 {
+        width: 66.6667%;
+        *width: 66.6357%
+    }
+    .xs-9 {
+        width: 75%;
+        *width: 74.969%
+    }
+    .xs-10 {
+        width: 83.3333%;
+        *width: 83.3023%
+    }
+    .xs-11 {
+        width: 91.6667%;
+        *width: 91.6357%
+    }
+    .xs-12 {
+        width: 100%
+    }
+}
