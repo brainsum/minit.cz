@@ -4,7 +4,7 @@ $view = Brainsum\App::getConfig();
 
 ?><!DOCTYPE html>
 
-<html id="root" xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz" lang="cz" prefix="og: http://ogp.me/ns#">
+<html id="root" xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs" prefix="og: http://ogp.me/ns#">
 <head>
     <!--[if (IE 9)&!(IEMobile)]><meta http-equiv="X-UA-Compatible" content="IE=9"/><![endif]-->
     <meta charset="UTF-8"/>
@@ -66,15 +66,22 @@ $view = Brainsum\App::getConfig();
 <!-- [MAIN] CONTENT -->
 
 <article id="main" role="main">
+    <h1 class="hidden">O nás</h1>
     <div id="main-container">
 
         <!-- [MAIN.NODE-ITEM] MARKETING LEAD -->
 
         <section class="block block-dark view" id="splash" data-component="parallax" role="presentation">
             <div class="inline-container view layer">
+<<<<<<< HEAD
                 <div class="inline container bottom">
                     <h1 class="main">Zastavte se na minutku.</h1>
                     <h2 class="text">Zastavte se na fornetti.</h2>
+=======
+                <div class="inline container">
+                    <h2 class="main">Zastavte se na minutku.</h2>
+                    <h3 class="text">Zastavte se na fornetti.</h3>
+>>>>>>> c7552a81e9b1a0ad91e84150b76193e4fd02aad4
                 </div>
             </div>
         </section>
@@ -166,6 +173,104 @@ $view = Brainsum\App::getConfig();
                 <h2 class="title">Szöveges blokk</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at vehicula nunc, vel mollis tortor. Donec nec risus eget lectus ultricies mattis sed et nulla. Aliquam erat volutpat. Sed hendrerit consectetur rutrum. Donec auctor, turpis sit amet accumsan varius, ligula diam efficitur libero, at tristique nisl lorem et lectus. Sed in justo et magna ornare pretium sed tempus orci. Sed sit amet ultrices lacus, eget vehicula ex. Quisque faucibus auctor imperdiet. Aenean eget euismod lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi purus, vestibulum ut lacinia sit amet, ultrices id velit. Praesent aliquet odio velit, nec blandit eros tristique quis. Etiam sed posuere ante.</p>
                 <a class="btn btn-next" href="#">Chem vedieť viac</a>
+            </div>
+        </section>
+
+        <!-- [MAIN.NODE-LIST] YEARS -->
+
+        <section class="block block-lead content">
+            <div class="container">
+                <h2 class="title">Ocenenia</h2>
+                <ul class="list list-year">
+                    <li class="item">
+                        <h5 class="year">2009</h5>
+                        <div class="info">
+                            <ul class="list text">
+                                <li class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li class="item">Ut laoreet porttitor risus, mollis vulputate nibh. Proin vel sagittis ex, eu aliquam sapien.</li>
+                                <li class="item">Vivamus sed venenatis elit.</li>
+                            </ul>
+                            <ul class="list icon">
+                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&amp;width=100" alt=""/></li>
+                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&amp;width=100" alt=""/></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h5 class="year">2008</h5>
+                        <div class="info">
+                            <ul class="list text">
+                                <li class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li class="item">Ut laoreet porttitor risus, mollis vulputate nibh. Proin vel sagittis ex, eu aliquam sapien.</li>
+                            </ul>
+                            <ul class="list icon">
+                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&amp;width=100" alt=""/></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- [MAIN.NODE-LIST] PLAIN -->
+
+        <section class="block block-fade content">
+            <div class="container">
+                <h2 class="title">Staňte sa franchisistom</h2>
+                <h4 class="lead">Je to jednoduché</h4>
+                <ul class="list list-plain">
+                    <li class="item">Listaelem #1</li>
+                    <li class="item">Listaelem #2</li>
+                    <li class="item">Listaelem #3</li>
+                    <li class="item">Listaelem #4</li>
+                    <li class="item">Listaelem #5</li>
+                    <li class="item">Listaelem #6</li>
+                    <li class="item">Listaelem #7</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- [MAIN.NODE-FORM] -->
+
+        <section class="block block-lead content">
+            <div class="container">
+                <h2 class="title">Získať viac informácií</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet porttitor risus, mollis vulputate nibh. Proin vel sagittis ex, eu aliquam sapien.</p>
+
+                <form class="form" name="form-info" action="/send">
+                    <div class="item required">
+                        <label class="label" for="info-name">Vaše meni/firma</label>
+                        <input class="input" id="info-name" name="name" type="text" maxlength="255" required=""/>
+                    </div>
+                    <div class="item required">
+                        <label class="label" for="info-address">Zadajte okres</label>
+                        <input class="input" id="info-address" name="address" type="text" maxlength="255" required=""/>
+                    </div>
+                    <div class="item required">
+                        <label class="label" for="info-phone">Kontaktné tel. číslo</label>
+                        <input class="input" id="info-phone" name="phone" type="text" maxlength="255" required=""/>
+                    </div>
+                    <div class="item required">
+                        <label class="label" for="info-phone">E-mail</label>
+                        <input class="input" id="info-email" name="email" type="email" maxlength="255" required=""/>
+                    </div>
+                    <div class="item item-expand">
+                        <label class="label" for="info-message">Stručný popis Vašej prevádzky</label>
+                        <textarea class="input" name="message" id="info-message"></textarea>
+                    </div>
+                    <div class="item item-expand">
+                        <label class="label" for="info-cooperation">Vaša predstava o spolupráci / o aký sortiment máte záujem</label>
+                        <textarea class="input" name="cooperation" id="info-cooperation"></textarea>
+                    </div>
+                    <div class="item item-expand required">
+                        <img class="code" src="about:blank" alt=""/>
+                        <label class="label" for="info-code">Zadajte kód z obrázku</label>
+                        <input class="input" name="code" id="info-code" type="text" autocomplete="off" required=""/>
+                    </div>
+
+                    <input class="btn" type="submit" value="Odoslať"/>
+                    <input type="hidden" name="token" value=""/>
+                </form>
             </div>
         </section>
     </div>

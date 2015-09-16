@@ -1,0 +1,48 @@
+@import (reference) "../lib/config.less";
+
+.layout-xs() {
+    @s-label-width: 160px;
+
+    .form {
+        display: block;
+
+        & > .item:extend(.clearfix all) {
+            padding-bottom: 1em;
+        }
+        & > .item-expand {
+            .label {
+                float: none;
+                width: auto;
+            }
+            .input {
+                width: auto;
+                margin-left: 0;
+            }
+        }
+        .label, .input {
+            display: block;
+        }
+        .label {
+            width: @s-label-width;
+            float: left;
+            padding: round(@s-padding / 2) 0;
+            white-space: nowrap;
+        }
+        .input {
+            @local-input-gap: (@s-label-width + @s-padding);
+
+            margin-left: @local-input-gap;
+            padding: round(@s-padding / 2);
+            width: ~"calc(100% - @{local-input-gap})";
+        }
+        .required {
+            .label:after {
+                display: inline-block;
+                content: "*";
+                color: red;
+                font-weight: 700;
+                margin-left: round(@s-padding / 2);
+            }
+        }
+    }
+}

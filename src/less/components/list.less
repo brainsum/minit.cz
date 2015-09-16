@@ -1,0 +1,53 @@
+@import (reference) "../lib/config.less";
+
+.layout-xs() {
+    @s-year-width: 50px;
+
+    // Default (numbered) list
+
+    .list-plain {
+        list-style: outside decimal;
+        padding-left: 20px;
+
+        & > .item {
+            padding-left: @s-padding;
+        }
+    }
+
+    // Specialized block-content list with year bullets
+
+    .list-year {
+        & > .item:extend(.clearfix all) {
+            & + .item {
+                margin-top: 2em;
+            }
+        }
+        .year {
+            font-size: 1em;
+            float: left;
+            width: @s-year-width;
+        }
+        .info {
+            margin-left: @s-year-width;
+        }
+        .text {
+            & > .item:before {
+                display: inline-block;
+                content: "-";
+                width: 15px;
+                opacity: .5;
+            }
+        }
+        .icon {
+            margin-top: 1em;
+
+            & > .item {
+                display: inline-block;
+
+                & + .item {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}
