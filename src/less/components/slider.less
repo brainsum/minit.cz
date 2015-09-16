@@ -1,5 +1,12 @@
 @import (reference) "../lib/config.less";
 
+/**
+ *
+ * @author Székely Ádám <aszekely@brainsum.com>
+ * @author Krisztian Pinter <kpinter@brainsum.com> 
+ *
+ */
+
 .layout-xs() {
     .slider {
         position: relative;
@@ -16,8 +23,7 @@
             .list {
                 border-radius: @s-font;
                 height: @s-font * 2;
-                padding: 5px 8px;
-                background: fade(#000, 50%);
+                padding: 5px 8px;                
                 margin-left: -100%;
             }
             .item, .selector {
@@ -25,10 +31,11 @@
             }
             .item {
                 background: #fff;
-                padding: 2px;
+                padding: 0;
                 vertical-align: baseline;
-                width: 16px;
-                height: 16px;
+                width: 28px;
+                height: 28px;
+                box-shadow: 6px 6px 18px rgba(0,0,0,.3);
 
                 & + .item {
                     margin-left: 5px;
@@ -36,9 +43,9 @@
             }
             .selector {
                 display: block;
-                width: 12px;
-                height: 12px;
-                background: #3E50B4;
+                width: 28px;
+                height: 28px;
+                background: #387CA9;
                 opacity: 0;
                 transition: opacity .2s ease-in-out;
                 cursor: pointer;
@@ -63,6 +70,11 @@
             padding: @s-padding (@s-padding * 2);
             text-align: left;
             opacity: .8;
+            vertical-align: top;
+
+            .last {
+                margin-top: .5em;
+            }
         }
     }
 

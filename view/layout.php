@@ -72,7 +72,7 @@ $view = Brainsum\App::getConfig();
 
         <section class="block block-dark view" id="splash" data-component="parallax" role="presentation">
             <div class="inline-container view layer">
-                <div class="inline container">
+                <div class="inline container bottom">
                     <h1 class="main">Zastavte se na minutku.</h1>
                     <h2 class="text">Zastavte se na fornetti.</h2>
                 </div>
@@ -101,7 +101,7 @@ $view = Brainsum\App::getConfig();
                             <img class="inline xs-6 image" src="img/spenat.png" alt="špenát"/>
                             <figcaption class="inline xs-6 text">
                                 <p>Novinka, které je souzeno, aby nám všem chutnala. Lahodnou chuť špenátové náplně podtrhuje sýr niva a povrch je posypaný zlatým a křupavým sýrem.</p>
-                                <strong>Od teď je špenát nejen zdravý, ale také chutný!</strong>
+                                <strong class="last">Od teď je špenát nejen zdravý, ale také chutný!</strong>
                             </figcaption>
                         </figure>
                     </div>
@@ -113,7 +113,7 @@ $view = Brainsum\App::getConfig();
                             <img class="inline xs-6 image" src="img/cola.png" alt="Cola"/>
                             <figcaption class="inline xs-6 text">
                                 <p>Otevřeli jsme zbrusu novou prodejnu v Mercury centru v Českých Budějovicích. Kompletně nový styl, příjemné prostředí a stále stejně chutné a kvalitní produkty.</p>
-                                <strong>Těšíme se na vaši návštěvu!</strong>
+                                <strong class="last">Těšíme se na vaši návštěvu!</strong>
                             </figcaption>
                         </figure>
                     </div>
@@ -125,7 +125,7 @@ $view = Brainsum\App::getConfig();
                             <img class="inline xs-6 image" src="img/nugat.png" alt="Nugát"/>
                             <figcaption class="inline xs-6 text">
                                 <p>Mák patří k naší zemi stejně jako špagety k Itálii. Vaše velká poptávka po makových produktech nám vnukla skvělý nápad. Stávajícímu skořicovému Rollu tak přibyl makový bratr!</p>
-                                <strong>Vychutnat si ho můžete již teď na všech prodejnách.</strong>
+                                <strong class="last">Vychutnat si ho můžete již teď na všech prodejnách.</strong>
                             </figcaption>
                         </figure>
                     </div>
