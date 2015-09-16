@@ -74,15 +74,9 @@ $view = Brainsum\App::getConfig();
         <section class="block block-dark view" id="splash" data-component="parallax" role="presentation">
             <div class="inline-container view layer">
 <<<<<<< HEAD
-<<<<<<< HEAD
                 <div class="inline container bottom">
                     <h1 class="main">Zastavte se na minutku.</h1>
                     <h2 class="text">Zastavte se na fornetti.</h2>
-=======
-                <div class="inline container">
-                    <h2 class="main">Zastavte se na minutku.</h2>
-                    <h3 class="text">Zastavte se na fornetti.</h3>
->>>>>>> c7552a81e9b1a0ad91e84150b76193e4fd02aad4
 =======
                 <div class="inline container">
                     <h2 class="main">Zastavte se na minutku.</h2>
