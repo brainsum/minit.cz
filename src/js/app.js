@@ -5,14 +5,18 @@
     var _data = 0;
     var _lock = false;
 
-    var _getHeight = function () {
-        _data = _node.clientHeight;
+    /**
+     * Target element height calculator
+     * @private
+     */
+    var getHeight = function () {
+        _data = _node.clientHeight || 0;
     };
 
     // Appending node size listeners
 
-    window.addEventListener('resize', _getHeight, false);
-    window.addEventListener('load', _getHeight, false);
+    window.addEventListener('resize', getHeight, false);
+    window.addEventListener('DOMContentLoaded', getHeight, false);
 
     /**
      * Adding parallax effect to the header splash-image

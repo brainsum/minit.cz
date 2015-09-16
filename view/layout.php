@@ -171,6 +171,6 @@ $view = Brainsum\App::getConfig();
     </div>
 </article>
 
-<script src="../src/js/app.js" defer="" async=""></script>
+<script src="js/app.js" defer="" async=""></script>
 </body>
 </html>
