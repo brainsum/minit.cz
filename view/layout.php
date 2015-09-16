@@ -4,7 +4,7 @@ $view = Brainsum\App::getConfig();
 
 ?><!DOCTYPE html>
 
-<html id="root" xmlns="http://www.w3.org/1999/xhtml" xml:lang="cz" lang="cz" prefix="og: http://ogp.me/ns#">
+<html id="root" xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs" prefix="og: http://ogp.me/ns#">
 <head>
     <!--[if (IE 9)&!(IEMobile)]><meta http-equiv="X-UA-Compatible" content="IE=9"/><![endif]-->
     <meta charset="UTF-8"/>
@@ -66,6 +66,7 @@ $view = Brainsum\App::getConfig();
 <!-- [MAIN] CONTENT -->
 
 <article id="main" role="main">
+    <h1 class="hidden">O nás</h1>
     <div id="main-container">
 
         <!-- [MAIN.NODE-ITEM] MARKETING LEAD -->
@@ -73,8 +74,8 @@ $view = Brainsum\App::getConfig();
         <section class="block block-dark view" id="splash" data-component="parallax" role="presentation">
             <div class="inline-container view layer">
                 <div class="inline container">
-                    <h1 class="main">Zastavte se na minutku.</h1>
-                    <h2 class="text">Zastavte se na fornetti.</h2>
+                    <h2 class="main">Zastavte se na minutku.</h2>
+                    <h3 class="text">Zastavte se na fornetti.</h3>
                 </div>
             </div>
         </section>
@@ -184,8 +185,8 @@ $view = Brainsum\App::getConfig();
                                 <li class="item">Vivamus sed venenatis elit.</li>
                             </ul>
                             <ul class="list icon">
-                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&width=100" alt=""/></li>
-                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&width=100" alt=""/></li>
+                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&amp;width=100" alt=""/></li>
+                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&amp;width=100" alt=""/></li>
                             </ul>
                         </div>
                     </li>
@@ -197,7 +198,7 @@ $view = Brainsum\App::getConfig();
                                 <li class="item">Ut laoreet porttitor risus, mollis vulputate nibh. Proin vel sagittis ex, eu aliquam sapien.</li>
                             </ul>
                             <ul class="list icon">
-                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&width=100" alt=""/></li>
+                                <li class="item"><img class="logo" src="http://i3.cpcache.com/product/5024365/tile_coaster.jpg?height=100&amp;width=100" alt=""/></li>
                             </ul>
                         </div>
                     </li>
