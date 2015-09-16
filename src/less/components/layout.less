@@ -123,8 +123,10 @@
         text-align: center;
     }
     .block {
+        @s-block-grid: (@s-padding * 4);
+
         position: relative;
-        padding: @s-padding (@s-padding * 2);
+        padding: @s-block-grid 0;
 
         .container {
             max-width: 100%;
@@ -134,13 +136,15 @@
             font-weight: 700;
             color: @c-dark;
             margin: 0;
-            padding: 1em 0;
+            padding: 0 0 @s-block-grid;
         }
         &-lead {
             background: @c-lite url(../img/bg-yellow-lite.jpg) no-repeat scroll center 0;
+            background-size: cover;
         }
         &-fade {
             background: @c-gray url(../img/bg-yellow-substract.jpg) no-repeat scroll center center;
+            background-size: cover;
         }
         &-dark {
             background: @c-dark;
@@ -162,11 +166,12 @@
     }
     .btn:extend(.inline all) {
         margin-bottom: 1em;
+        background: none;
         border: 1px solid fade(@c-dark, 50%);
         border-radius: 3px;
         color: @c-dark;
         padding: 0 @s-padding;
-        line-height: 3em;
+        line-height: 2.5em;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 700;

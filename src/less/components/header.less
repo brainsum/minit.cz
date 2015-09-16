@@ -18,6 +18,7 @@
             display: block;
             max-width: 100%;
             backface-visibility: hidden;
+            pointer-events: none;
         }
     }
     #header {
@@ -52,11 +53,10 @@
             border-bottom: @s-head-border solid transparent;
             color: #fff;
             padding: round((@s-head - @s-font) / 2) 12px;
-
-            &:hover {
-                color: @c-dark;
-                border-color: darken(@c-head, 21%);
-            }
+        }
+        .link:hover, .item.active .link {
+            color: @c-dark;
+            border-color: darken(@c-head, 21%);
         }
         & > .item {
             height: 100%;

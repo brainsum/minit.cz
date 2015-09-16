@@ -7,4 +7,4 @@ spl_autoload_register(function ($className) {
 });
 
 // Initializing application
-Brainsum\App::init(__DIR__, 'cz');
+Brainsum\App::init(__DIR__, 'cs');
