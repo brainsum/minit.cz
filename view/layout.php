@@ -53,7 +53,7 @@ $view = Brainsum\App::getConfig();
 
         <!-- [MAIN.HEADER] NAVIGATION -->
 
-        <nav id="menu-wrapper" class="inline" role="navigation">
+        <nav id="menu-wrapper" class="inline">
             <ul id="menu" class="inline-container">
                 <li class="inline item active"><a class="link" href="/#o-nas">O nás</a></li>
                 <li class="inline item"><a class="link" href="/#pro-partnery">Pro partnery</a></li>
@@ -70,16 +70,18 @@ $view = Brainsum\App::getConfig();
 
         <!-- [MAIN.NODE-ITEM] MARKETING LEAD -->
 
-        <section class="block block-dark inline-container view" role="presentation">
-            <div class="inline container">
-                <h1 class="main">Zastavte sa na minútku.</h1>
-                <h2 class="text">Zastavte sa na fornetti.</h2>
+        <section class="block block-dark view" id="splash" data-component="parallax" role="presentation">
+            <div class="inline-container view layer">
+                <div class="inline container">
+                    <h1 class="main">Zastavte sa na minútku.</h1>
+                    <h2 class="text">Zastavte sa na fornetti.</h2>
+                </div>
             </div>
         </section>
 
         <!-- [MAIN.NODE-ITEM] SLIDER -->
 
-        <section class="block block-lead slider" role="region">
+        <section class="block block-lead slider">
             <input id="slider-0-0" class="hidden" name="x-slider" type="radio" checked=""/>
             <input id="slider-0-1" class="hidden" name="x-slider" type="radio"/>
             <input id="slider-0-2" class="hidden" name="x-slider" type="radio"/>
@@ -91,9 +93,9 @@ $view = Brainsum\App::getConfig();
                     <li class="inline item"><label class="selector" for="slider-0-2"></label></li>
                 </ul>
             </div>
-            <ul class="inline-container view module" role="list">
+            <ul class="inline-container view module">
                 <li class="inline-container view item">
-                    <div class="inline" role="listitem">
+                    <div class="inline">
                         <h3 class="title">Odteraz bude špenát chutiť každému!</h3>
                         <figure class="inline-container container">
                             <img class="inline xs-6 image" src="http://www.fornetti.sk/minit/files/imce/spenat.png" alt=""/>
@@ -105,7 +107,7 @@ $view = Brainsum\App::getConfig();
                     </div>
                 </li>
                 <li class="inline-container view item">
-                    <div class="inline" role="listitem">
+                    <div class="inline">
                         <h3 class="title">Odteraz bude špenát chutiť každému!</h3>
                         <figure class="inline-container container">
                             <img class="inline xs-6 image" src="http://www.fornetti.sk/minit/files/imce/spenat.png" alt=""/>
@@ -117,7 +119,7 @@ $view = Brainsum\App::getConfig();
                     </div>
                 </li>
                 <li class="inline-container view item">
-                    <div class="inline" role="listitem">
+                    <div class="inline">
                         <h3 class="title">Odteraz bude špenát chutiť každému!</h3>
                         <figure class="inline-container container">
                             <img class="inline xs-6 image" src="http://www.fornetti.sk/minit/files/imce/spenat.png" alt=""/>
@@ -149,7 +151,7 @@ $view = Brainsum\App::getConfig();
 
         <!-- [MAIN.NODE-TEXT] CONTENT -->
 
-        <section class="block block-lead content" role="region">
+        <section class="block block-lead content">
             <div class="container">
                 <h2 class="title">Szöveges blokk</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at vehicula nunc, vel mollis tortor. Donec nec risus eget lectus ultricies mattis sed et nulla. Aliquam erat volutpat. Sed hendrerit consectetur rutrum. Donec auctor, turpis sit amet accumsan varius, ligula diam efficitur libero, at tristique nisl lorem et lectus. Sed in justo et magna ornare pretium sed tempus orci. Sed sit amet ultrices lacus, eget vehicula ex. Quisque faucibus auctor imperdiet. Aenean eget euismod lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi purus, vestibulum ut lacinia sit amet, ultrices id velit. Praesent aliquet odio velit, nec blandit eros tristique quis. Etiam sed posuere ante.</p>
@@ -159,7 +161,7 @@ $view = Brainsum\App::getConfig();
 
         <!-- [MAIN.NODE-TEXT] CONTENT -->
 
-        <section class="block block-fade content" id="convergence" role="region">
+        <section class="block block-fade content" id="convergence">
             <div class="container">
                 <h2 class="title">Szöveges blokk</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at vehicula nunc, vel mollis tortor. Donec nec risus eget lectus ultricies mattis sed et nulla. Aliquam erat volutpat. Sed hendrerit consectetur rutrum. Donec auctor, turpis sit amet accumsan varius, ligula diam efficitur libero, at tristique nisl lorem et lectus. Sed in justo et magna ornare pretium sed tempus orci. Sed sit amet ultrices lacus, eget vehicula ex. Quisque faucibus auctor imperdiet. Aenean eget euismod lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi purus, vestibulum ut lacinia sit amet, ultrices id velit. Praesent aliquet odio velit, nec blandit eros tristique quis. Etiam sed posuere ante.</p>
@@ -169,5 +171,6 @@ $view = Brainsum\App::getConfig();
     </div>
 </article>
 
+<script src="../src/js/app.js" defer="" async=""></script>
 </body>
 </html>
