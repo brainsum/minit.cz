@@ -73,8 +73,8 @@ $view = Brainsum\App::getConfig();
         <section class="block block-dark view" id="splash" data-component="parallax" role="presentation">
             <div class="inline-container view layer">
                 <div class="inline container">
-                    <h1 class="main">Zastavte sa na minútku.</h1>
-                    <h2 class="text">Zastavte sa na fornetti.</h2>
+                    <h1 class="main">Zastavte se na minutku.</h1>
+                    <h2 class="text">Zastavte se na fornetti.</h2>
                 </div>
             </div>
         </section>
@@ -96,36 +96,36 @@ $view = Brainsum\App::getConfig();
             <ul class="inline-container view module">
                 <li class="inline-container view item">
                     <div class="inline">
-                        <h3 class="title">Odteraz bude špenát chutiť každému!</h3>
+                        <h3 class="title">Odteď bude špenát chutnat každému!</h3>
                         <figure class="inline-container container">
-                            <img class="inline xs-6 image" src="http://www.fornetti.sk/minit/files/imce/spenat.png" alt=""/>
+                            <img class="inline xs-6 image" src="img/spenat.png" alt="špenát"/>
                             <figcaption class="inline xs-6 text">
-                                <p>Novinka, ktorej je súdené aby nám všetkým chutila. Lahodnú chuť špenátu v plnke dotvára syr Niva a povrch výrobku je posypaný zlatým chrumkavým syrom.</p>
-                                <strong>Teraz je špenát nielen zdravý ale aj chutný!</strong>
+                                <p>Novinka, které je souzeno, aby nám všem chutnala. Lahodnou chuť špenátové náplně podtrhuje sýr niva a povrch je posypaný zlatým a křupavým sýrem.</p>
+                                <strong>Od teď je špenát nejen zdravý, ale také chutný!</strong>
                             </figcaption>
                         </figure>
                     </div>
                 </li>
                 <li class="inline-container view item">
                     <div class="inline">
-                        <h3 class="title">Odteraz bude špenát chutiť každému!</h3>
+                        <h3 class="title">MINIT má novou prodejnu v Českých Budějovicích</h3>
                         <figure class="inline-container container">
-                            <img class="inline xs-6 image" src="http://www.fornetti.sk/minit/files/imce/spenat.png" alt=""/>
+                            <img class="inline xs-6 image" src="img/cola.png" alt="Cola"/>
                             <figcaption class="inline xs-6 text">
-                                <p>Novinka, ktorej je súdené aby nám všetkým chutila. Lahodnú chuť špenátu v plnke dotvára syr Niva a povrch výrobku je posypaný zlatým chrumkavým syrom.</p>
-                                <strong>Teraz je špenát nielen zdravý ale aj chutný!</strong>
+                                <p>Otevřeli jsme zbrusu novou prodejnu v Mercury centru v Českých Budějovicích. Kompletně nový styl, příjemné prostředí a stále stejně chutné a kvalitní produkty.</p>
+                                <strong>Těšíme se na vaši návštěvu!</strong>
                             </figcaption>
                         </figure>
                     </div>
                 </li>
                 <li class="inline-container view item">
                     <div class="inline">
-                        <h3 class="title">Odteraz bude špenát chutiť každému!</h3>
+                        <h3 class="title">Vychutnejte si novinku – makové Rollo</h3>
                         <figure class="inline-container container">
-                            <img class="inline xs-6 image" src="http://www.fornetti.sk/minit/files/imce/spenat.png" alt=""/>
+                            <img class="inline xs-6 image" src="img/nugat.png" alt="Nugát"/>
                             <figcaption class="inline xs-6 text">
-                                <p>Novinka, ktorej je súdené aby nám všetkým chutila. Lahodnú chuť špenátu v plnke dotvára syr Niva a povrch výrobku je posypaný zlatým chrumkavým syrom.</p>
-                                <strong>Teraz je špenát nielen zdravý ale aj chutný!</strong>
+                                <p>Mák patří k naší zemi stejně jako špagety k Itálii. Vaše velká poptávka po makových produktech nám vnukla skvělý nápad. Stávajícímu skořicovému Rollu tak přibyl makový bratr!</p>
+                                <strong>Vychutnat si ho můžete již teď na všech prodejnách.</strong>
                             </figcaption>
                         </figure>
                     </div>
@@ -138,13 +138,13 @@ $view = Brainsum\App::getConfig();
         <div class="block block-fade" id="lead" role="presentation">
             <ul class="inline-container container">
                 <li class="inline xs-4">
-                    <strong class="count">120</strong><em class="text">Prodejních míst</em>
+                    <strong class="count">150</strong><em class="text">prodejních míst</em>
                 </li>
                 <li class="inline xs-4">
-                    <strong class="count">50</strong><em class="text">Různých druhů</em>
+                    <strong class="count">50</strong><em class="text">různých druhů</em>
                 </li>
                 <li class="inline xs-4">
-                    <strong class="count">15</strong><em class="text">Let na trhu</em>
+                    <strong class="count">15</strong><em class="text">let na trhu</em>
                 </li>
             </ul>
         </div>
@@ -153,8 +153,8 @@ $view = Brainsum\App::getConfig();
 
         <section class="block block-lead content">
             <div class="container">
-                <h2 class="title">Szöveges blokk</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at vehicula nunc, vel mollis tortor. Donec nec risus eget lectus ultricies mattis sed et nulla. Aliquam erat volutpat. Sed hendrerit consectetur rutrum. Donec auctor, turpis sit amet accumsan varius, ligula diam efficitur libero, at tristique nisl lorem et lectus. Sed in justo et magna ornare pretium sed tempus orci. Sed sit amet ultrices lacus, eget vehicula ex. Quisque faucibus auctor imperdiet. Aenean eget euismod lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi purus, vestibulum ut lacinia sit amet, ultrices id velit. Praesent aliquet odio velit, nec blandit eros tristique quis. Etiam sed posuere ante.</p>
+                <h2 class="title">Naše historie</h2>
+                <p>Máte „minitku“? Příběh, který stojí za každým kouskem našeho pečiva, totiž stojí za přečtení. Už v roce 2000 jste si ve Znojmě mohli vychutnat první kousky křupavého a lahodného pečiva. Ušli jsme od té doby dlouhou cestu, začínali jsme se základními produkty v pár prodejnách. Jenže jsme si uvědomili, že český jazýček není úplně jednoduché uspokojit a začali jsme vyvíjet chutě ušité na míru vašim chuťovým pohárkům.</p>
                 <p>Maecenas imperdiet ligula vitae augue cursus, in imperdiet est dapibus. Cras in orci lacinia, tincidunt nibh vel, tempus leo. Suspendisse ligula ex, pulvinar non rhoncus non, lacinia non justo. Fusce justo lacus, dapibus a vehicula eget, bibendum quis felis. Aliquam interdum non felis ut laoreet. Cras eget faucibus ligula, et sodales tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed consectetur, velit sed pulvinar bibendum, nibh sapien pharetra ante, vitae cursus lectus ligula nec ex. Pellentesque massa enim, accumsan vitae mollis id, tempus in lorem. Proin vitae sagittis lacus. Nullam eu mi nec leo pellentesque aliquet.</p>
             </div>
         </section>
