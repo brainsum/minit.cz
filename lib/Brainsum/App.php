@@ -77,7 +77,7 @@ class App
     }
 
     public static function getAssetUrl($path) {
-        $file = substr($path, 0, 1) === '/' ? $path : "/assets/{$path}";
+        $file = "assets/{$path}";
         $time = null;
 
         if (file_exists($file) === true) {
