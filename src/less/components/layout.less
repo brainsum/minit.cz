@@ -170,7 +170,7 @@
         border: 1px solid fade(@c-dark, 50%);
         border-radius: 3px;
         color: @c-dark;
-        padding: 0 @s-padding;
+        padding: 0 24px;
         line-height: 2.5em;
         text-decoration: none;
         text-transform: uppercase;
@@ -183,8 +183,12 @@
         &-next:after {
             display: inline-block;
             line-height: .8em;
-            content: "→";
+            content: " ";
             padding-left: round(@s-font / 2);
+            background: url(../img/arrow-right.png) repeat-none 0 0;
+            width: 12px;
+            height: 12px;
+            margin-left: 12px;
         }
     }
     .xs-1 {
