@@ -19,7 +19,7 @@ class App
     protected static $_base;
 
     public static function init($config) {
-        if ($_SESSION === null) {
+        if (isset($_SESSION) === false) {
             session_start();
         }
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
@@ -33,7 +33,7 @@ class App
 
                 if (empty($_POST) === false && ($form = self::validate($_POST)) !== false) {
                     $href = $_SESSION['page'];
-                    self::send(self::$_config->get('send'), (array) $form);
+                    self::send(self::$_config->get('mail.send'), (array) $form);
                 }
                 self::redirect($href);
             }
@@ -43,7 +43,6 @@ class App
             echo self::render('layout', true);
         }
         catch (\Exception $e) {
-            print_r($e);die;
             self::redirect();
         }
     }
@@ -99,20 +98,6 @@ class App
         return $renew === true ? $_SESSION['token'] = sha1(mt_rand(0, 64000)) : $_SESSION['token'];
     }
 
-    public static function isProduction() {
-        static $_mode, $_type;
-
-        if ($_type === null) {
-            $_type = array('dev', 'local');
-        }
-        if ($_mode === null) {
-            $_mode = explode('.', $_SERVER['SERVER_NAME']);
-            $_mode = array_pop($_mode);
-            $_mode = in_array($_mode, $_type) === false;
-        }
-        return $_mode;
-    }
-
     public static function redirect($path = null, $http = 301) {
         header('Location: ' . ($path === null ? self::getConfig()->get('home', '/') : $path), $http);
         exit;
@@ -132,7 +117,7 @@ class App
     }
 
     public static function send($target, array $data) {
-        require_once 'lib/PHPMailer/PHPMailerAutoload.php';
+        include 'lib/PhpMailer/PHPMailerAutoload.php';
         $html = '';
 
         foreach ($data as $key => $value) {
@@ -144,15 +129,12 @@ class App
         $html.= "<br/><br/><small>This is an auto-generated message, please do not answer!</small>";
 
         $mail = new \PHPMailer();
-        $mail->setFrom($target);
+        $mail->setFrom(self::$_config->get('mail.from', 'dev@brainsum.com'));
         $mail->addAddress($target);
         $mail->msgHTML($html);
-        $mail->Subject = '[FORM.Submit] Fornetti Minit (Contact)';
+        $mail->Subject = '[FORM.Submit] Fornetti Minit';
         $mail->AltBody = strip_tags(str_replace('<br/>', "\r\n", $html));
-
-        if ($mail->send() === false) {
-            die($mail->ErrorInfo);
-        }
+        $mail->send();
     }
 
     public static function validate($post) {
@@ -170,7 +152,7 @@ class App
         if ($post['token'] !== self::getToken()) {
             throw new \Exception("Invalid CSRF token");
         }
-        $captcha = new ReCaptcha(self::$_config->get('captcha.secret'));
+        $captcha = new ReCaptcha(self::$_config->get('secret'));
 
         if ($captcha->verify($post['g-recaptcha-response'], $_SERVER['REMOTE_ADDR'])->isSuccess() === false) {
             throw new \Exception("Invalid reCAPTCHA code");

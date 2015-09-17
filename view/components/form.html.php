@@ -5,7 +5,7 @@
         <h2 class="title">Získať viac informácií</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet porttitor risus, mollis vulputate nibh. Proin vel sagittis ex, eu aliquam sapien.</p>
 
-        <form class="form" name="contact" action="/" method="post">
+        <form class="form" name="contact" action="/" method="post" enctype="application/x-www-form-urlencoded">
             <div class="item required">
                 <label class="label" for="info-name">Vaše meni/firma</label>
                 <input class="input" id="info-name" name="name" type="text" maxlength="255" required=""/>
