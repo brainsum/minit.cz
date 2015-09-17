@@ -14,6 +14,20 @@
         }
     }
 
+    .list-dashed {
+        list-style: none;
+
+        & > .item {
+            padding: @s-padding 0;
+
+            &:before {
+                content: "-";
+                margin-right: 6px;
+            }
+        }
+
+    }
+
     // Specialized block-content list with year bullets
 
     .list-year {
