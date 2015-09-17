@@ -164,6 +164,8 @@ class App
             }
             $value = htmlspecialchars(strip_tags($value));
         }
+        var_dump($post);
+        var_dump(self::getToken());
         if ($post['token'] !== self::getToken()) {
             throw new \Exception("Invalid CSRF token");
         }
