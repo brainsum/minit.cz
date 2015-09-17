@@ -11,11 +11,11 @@
                 <input class="input" id="info-name" name="name" type="text" maxlength="255" required=""/>
             </div>
             <div class="item required">
-                <label class="label" for="info-address">Zadajte okres</label>
+                <label class="label" for="info-address">Město</label>
                 <input class="input" id="info-address" name="address" type="text" maxlength="255" required=""/>
             </div>
             <div class="item required">
-                <label class="label" for="info-phone">Kontaktné tel. číslo</label>
+                <label class="label" for="info-phone">Kontaktní tel. číslo</label>
                 <input class="input" id="info-phone" name="phone" type="text" maxlength="255" required=""/>
             </div>
             <div class="item required">
@@ -27,14 +27,14 @@
                 <textarea class="input" name="message" id="info-message"></textarea>
             </div>
             <div class="item item-expand">
-                <label class="label" for="info-cooperation">Vaša predstava o spolupráci / o aký sortiment máte záujem</label>
+                <label class="label" for="info-cooperation">Vaše představa o spolupráci / o jaký sortiment máte zájem</label>
                 <textarea class="input" name="cooperation" id="info-cooperation"></textarea>
             </div>
             <div class="item item-expand required">
                 <div class="g-recaptcha" data-sitekey="6LeC-AwTAAAAAIKFmpvgZSlM4Oqv5f0xHcp54mJ9"></div>
             </div>
 
-            <input class="btn" type="submit" value="Odoslať"/>
+            <input class="btn" type="submit" value="Odeslat"/>
             <input type="hidden" name="token" value="<?= Brainsum\App::getToken(true) ?>"/>
         </form>
     </div>
