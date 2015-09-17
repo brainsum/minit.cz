@@ -75,6 +75,5 @@ $menu = Brainsum\App::getMenu();
 </article>
 
 <script src="https://www.google.com/recaptcha/api.js" defer="defer"></script>
-<script src="<?= Brainsum\App::getAssetUrl('js/app.js') ?>" defer="defer" async="async"></script>
 </body>
 </html>
