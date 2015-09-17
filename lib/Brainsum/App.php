@@ -40,6 +40,7 @@ class App
             echo self::render('layout', true);
         }
         catch (\Exception $e) {
+            print_r($e);die;
             self::redirect();
         }
     }
