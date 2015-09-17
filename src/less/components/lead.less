@@ -1,15 +1,23 @@
 @import (reference) "../lib/config.less";
 
+/**
+ *
+ * @author Székely Ádám <aszekely@brainsum.com>
+ * @author Krisztian Pinter <kpinter@brainsum.com> 
+ *
+ */
+
 .layout-xs() {
     #lead {
-        padding: @s-padding 0;
+        padding: 22px 0 0;
 
         .count, .text {
             display: block;
+            font-weight: 400;
         }
         .count {
-            font-size: 3em;
-            line-height: 2em;
+            font-size: 2em;
+            line-height: 1.2em;            
         }
         .text {
             font-size: (24 / 16em);
@@ -17,7 +25,6 @@
             font-style: normal;
             text-transform: lowercase;
             margin-top: -1em;
-            opacity: .5;
         }
     }
 }

@@ -11,7 +11,7 @@
     'path' => array(
         'o-nas' => array(
             'title' => 'O nás',
-            'block' => array('splash', 'slider', 'what-we-have', 'nasa-historia', 'convergence')
+            'block' => array('splash', 'slider', 'what-we-have', 'our-history', 'philosophy', 'convergence')
         ),
         'pro-partnery' => array(
             'title' => 'Pro partnery',
