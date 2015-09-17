@@ -6,7 +6,6 @@
 #	@author 	Székely Ádám <aszekely@brainsum.com>
 #	@license	Creative Commons 3.0 (Unported)
 
-Options -Indexes -Includes -ExecCGI
 AddDefaultCharset UTF-8
 ServerSignature off
 
