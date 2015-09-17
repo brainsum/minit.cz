@@ -19,6 +19,9 @@ class App
     protected static $_base;
 
     public static function init($config) {
+        if ($_SESSION === null) {
+            session_start();
+        }
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
         self::$_config  = new Config($config);
 
