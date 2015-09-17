@@ -7,6 +7,7 @@ class Config
     protected $data = null;
 
     public function __construct($config) {
+        die(App::getPath("config/{$config}.php"));
         $this->data = include(App::getPath("config/{$config}.php"));
     }
 

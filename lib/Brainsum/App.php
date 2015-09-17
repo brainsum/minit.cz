@@ -22,7 +22,6 @@ class App
     public static function init($root, $config) {
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
         self::$_root    = trim($root, "\t\\/ ");
-        die(self::getPath('config/cs.php'));
         self::$_config  = new Config($config);
 
         $path = substr($_SERVER['REQUEST_URI'], 1);
