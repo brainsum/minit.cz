@@ -119,11 +119,7 @@ class App
     }
 
     public static function send($target, array $data) {
-        try {
-            require_once 'lib/PHPMailer/PHPMailerAutoload.php';
-        } catch(\Exception $e) {
-            var_dump($e);die;
-        }
+        require_once '../PHPMailer/PHPMailerAutoload.php';
         $html = '';
 
         foreach ($data as $key => $value) {
