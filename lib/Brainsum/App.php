@@ -21,7 +21,7 @@ class App
 
     public static function init($root, $config) {
         self::$_config  = new Config($config);
-        self::$_base    = implode('://', [self::getScheme(), $_SERVER['SERVER_NAME']]);
+        self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
         self::$_root    = trim($root, "\t\\/ ");
 
         $path = substr($_SERVER['REQUEST_URI'], 1);
@@ -62,22 +62,22 @@ class App
     }
 
     public static function getMenu() {
-        $menu = [];
-        $data = self::$_config->get('path', []);
+        $menu = array();
+        $data = self::$_config->get('path', array());
         $path = self::$_router->getPath();
 
         foreach ($data as $route => $page) {
-            $menu[] = [
+            $menu[] = array(
                 'path'  => $route,
                 'name'  => $page['title'],
                 'mode'  => $route === $path
-            ];
+            );
         }
         return $menu;
     }
 
     public static function getUrl($path = null) {
-        return $path === null ? self::$_base : implode('/', [self::$_base, $path]);
+        return $path === null ? self::$_base : implode('/', array(self::$_base, $path));
     }
 
     public static function getAssetUrl($path) {
@@ -94,7 +94,7 @@ class App
     }
 
     public static function getPath($path = null) {
-        return $path === null ? self::$_root : implode(DIRECTORY_SEPARATOR, [self::$_root, $path]);
+        return $path === null ? self::$_root : implode(DIRECTORY_SEPARATOR, array(self::$_root, $path));
     }
 
     public static function getToken($renew = false) {
@@ -105,7 +105,7 @@ class App
         static $_mode, $_type;
 
         if ($_type === null) {
-            $_type = ['dev', 'local'];
+            $_type = array('dev', 'local');
         }
         if ($_mode === null) {
             $_mode = explode('.', $_SERVER['SERVER_NAME']);
@@ -125,10 +125,10 @@ class App
         include("view/{$path}.html.php");
 
         $html = ob_get_clean();
-        $html = preg_replace(['/(\r|\n|\t|\s{2})/', '/<!--[^\[](.|\s)*?-->/'], '', $html);
+        $html = preg_replace(array('/(\r|\n|\t|\s{2})/', '/<!--[^\[](.|\s)*?-->/'), '', $html);
 
         if ($sign === true) {
-            $html.= "\r\n\r\n<!-- ".implode(" -->\r\n<!-- ", self::$_config->get('sign', [date('Y')]))." -->";
+            $html.= "\r\n\r\n<!-- ".implode(" -->\r\n<!-- ", self::$_config->get('sign', (array) date('Y')))." -->";
         }
         return $html;
     }
@@ -159,7 +159,7 @@ class App
     }
 
     public static function validate($post) {
-        $allowEmpty = ['message', 'cooperation'];
+        $allowEmpty = array('message', 'cooperation');
 
         foreach ($post as $key => & $value) {
             if (empty($value) === true && in_array($key, $allowEmpty) === false) {
@@ -177,16 +177,16 @@ class App
         // Validating reCAPTCHA
 
         if (self::isProduction() === true) {
-            curl_setopt_array($curl = curl_init(), [
+            curl_setopt_array($curl = curl_init(), array(
                 CURLOPT_URL => self::$_config->get('captcha.verify'),
                 CURLOPT_POST => 2,
-                CURLOPT_POSTFIELDS => [
+                CURLOPT_POSTFIELDS => array(
                     'secret' => self::$_config->get('captcha.secret'),
                     'response' => $post['g-recaptcha-response']
-                ],
+                ),
                 CURLOPT_SSL_VERIFYPEER => FALSE,
                 CURLOPT_RETURNTRANSFER => TRUE
-            ]);
+            ));
             $data = curl_exec($curl);
 
             curl_close($curl);
