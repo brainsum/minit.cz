@@ -24,8 +24,6 @@ class App
         }
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
         self::$_config  = new Config($config);
-        self::send(self::$_config->get('send'), array('Message' => 'Árvíztűrő tükörfúrógép'));
-        die;
 
         $path = substr($_SERVER['REQUEST_URI'], 1);
 
@@ -35,7 +33,7 @@ class App
 
                 if (empty($_POST) === false && ($form = self::validate($_POST)) !== false) {
                     $href = $_SESSION['page'];
-                    self::send(self::$_config->get('send'), (array) $form);
+                    self::send(self::$_config->get('mail.send'), (array) $form);
                 }
                 self::redirect($href);
             }
@@ -131,15 +129,12 @@ class App
         $html.= "<br/><br/><small>This is an auto-generated message, please do not answer!</small>";
 
         $mail = new \PHPMailer();
-        $mail->setFrom($target);
+        $mail->setFrom(self::$_config->get('mail.from', 'dev@brainsum.com'));
         $mail->addAddress($target);
         $mail->msgHTML($html);
-        $mail->Subject = '[FORM.Submit] Fornetti Minit (Contact)';
+        $mail->Subject = '[FORM.Submit] Fornetti Minit';
         $mail->AltBody = strip_tags(str_replace('<br/>', "\r\n", $html));
-
-        if ($mail->send() === false) {
-            die($mail->ErrorInfo);
-        }
+        $mail->send();
     }
 
     public static function validate($post) {
@@ -157,7 +152,7 @@ class App
         if ($post['token'] !== self::getToken()) {
             throw new \Exception("Invalid CSRF token");
         }
-        $captcha = new ReCaptcha(self::$_config->get('captcha.secret'));
+        $captcha = new ReCaptcha(self::$_config->get('secret'));
 
         if ($captcha->verify($post['g-recaptcha-response'], $_SERVER['REMOTE_ADDR'])->isSuccess() === false) {
             throw new \Exception("Invalid reCAPTCHA code");
