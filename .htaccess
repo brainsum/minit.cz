@@ -6,8 +6,6 @@
 #	@author 	Székely Ádám <aszekely@brainsum.com>
 #	@license	Creative Commons 3.0 (Unported)
 
-DirectoryIndex app.php
-
 Options -Indexes -Includes -ExecCGI
 AddDefaultCharset UTF-8
 ServerSignature off
