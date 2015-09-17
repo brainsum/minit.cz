@@ -17,10 +17,10 @@
             <div class="inline">
                 <h3 class="title">Odteď bude špenát chutnat každému!</h3>
                 <figure class="inline-container container">
-                    <img class="inline xs-6 image" src="img/spenat.png" alt="špenát"/>
+                    <img class="inline image" src="img/fornetti-minit-spenat.png" alt="Fornetti Minit špenát" width="300" />
                     <figcaption class="inline xs-6 text">
                         <p>Novinka, které je souzeno, aby nám všem chutnala. Lahodnou chuť špenátové náplně podtrhuje sýr niva a povrch je posypaný zlatým a křupavým sýrem.</p>
-                        <strong>Od teď je špenát nejen zdravý, ale také chutný!</strong>
+                        <strong class="last">Od teď je špenát nejen zdravý, ale také chutný!</strong>
                     </figcaption>
                 </figure>
             </div>
@@ -29,11 +29,11 @@
             <div class="inline">
                 <h3 class="title">MINIT má novou prodejnu v Českých Budějovicích</h3>
                 <figure class="inline-container container">
-                    <img class="inline xs-6 image" src="img/cola.png" alt="Cola"/>
                     <figcaption class="inline xs-6 text">
                         <p>Otevřeli jsme zbrusu novou prodejnu v Mercury centru v Českých Budějovicích. Kompletně nový styl, příjemné prostředí a stále stejně chutné a kvalitní produkty.</p>
-                        <strong>Těšíme se na vaši návštěvu!</strong>
+                        <strong class="last">Těšíme se na vaši návštěvu!</strong>
                     </figcaption>
+                    <img class="inline image" src="img/fornetti-minit-cola.png" alt="Fornetti Minit Cola" width="335"/>
                 </figure>
             </div>
         </li>
@@ -41,10 +41,10 @@
             <div class="inline">
                 <h3 class="title">Vychutnejte si novinku – makové Rollo</h3>
                 <figure class="inline-container container">
-                    <img class="inline xs-6 image" src="img/nugat.png" alt="Nugát"/>
+                    <img class="inline image" src="img/fornetti-minit-nugat.png" alt="Fornetti Minit Nugát" width="492" />
                     <figcaption class="inline xs-6 text">
                         <p>Mák patří k naší zemi stejně jako špagety k Itálii. Vaše velká poptávka po makových produktech nám vnukla skvělý nápad. Stávajícímu skořicovému Rollu tak přibyl makový bratr!</p>
-                        <strong>Vychutnat si ho můžete již teď na všech prodejnách.</strong>
+                        <strong class="last">Vychutnat si ho můžete již teď na všech prodejnách.</strong>
                     </figcaption>
                 </figure>
             </div>
