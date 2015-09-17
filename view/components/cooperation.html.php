@@ -3,7 +3,7 @@
 <section class="block block-lead content">
     <div class="container">
         <h2 class="title">Výhody spolupráce</h2>
-        <ul class="list list-dashed">
+        <ul class="list text">
             <li class="item">Budete spolupracovat s důvěryhodným a stabilním partnerem.</li>
             <li class="item">Dodáme vám veškeré marketingové materiály a know-how.</li>
             <li class="item">K dispozici a stále na blízku vám bude náš obchodní zástupce, který zároveň vyškolí váš personál-</li>

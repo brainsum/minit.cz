@@ -3,16 +3,32 @@
 .layout-xs() {
     @s-year-width: 50px;
 
-    // Default (numbered) list
+    
 
-    .list-plain {
-        list-style: outside decimal;
-        padding-left: 20px;
+    .list {
 
-        & > .item {
-            padding-left: @s-padding;
+        // Default (numbered) list
+        &.plain {
+            list-style: outside decimal;
+            padding-left: 20px;
+
+            & > .item {
+                padding-left: @s-padding;
+            }
+        }
+
+        // dashed list
+        &.text {
+            & > .item:before {
+                display: inline-block;
+                content: "-";
+                width: 15px;
+                opacity: .5;
+            }
         }
     }
+
+    
 
     // Specialized block-content list with year bullets
 
