@@ -11,15 +11,9 @@
     'path' => array(
         'o-nas' => array(
             'title' => 'O nás',
-<<<<<<< HEAD
-            'block' => ['splash', 'slider', 'what-we-have', 'our-history', 'philosophy', 'convergence']
-        ],
-        'pro-partnery' => [
-=======
-            'block' => array('splash', 'slider', 'what-we-have', 'nasa-historia', 'convergence')
+            'block' => array('splash', 'slider', 'what-we-have', 'our-history', 'philosophy', 'convergence')
         ),
         'pro-partnery' => array(
->>>>>>> 48ab5ef7499205b738556b22fde03642f4583fd2
             'title' => 'Pro partnery',
             'block' => array('splash', 'list-plain', 'list-year', 'form')
         ),
