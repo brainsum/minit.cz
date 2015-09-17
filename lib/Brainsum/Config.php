@@ -8,7 +8,7 @@ class Config
 
     public function __construct($config) {
         $file = App::getPath("config/{$config}.php");
-        print_r(array('file' => $file, 'data' => include($file));
+        print_r(array('file' => $file, 'data' => include($file)));
         die;
         $this->data = include(App::getPath("config/{$config}.php"));
     }
