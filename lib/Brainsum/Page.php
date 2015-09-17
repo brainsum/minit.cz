@@ -10,7 +10,7 @@ class Page
     protected $route = '';
     protected $title = '';
     protected $description = '';
-    protected $keywords = [];
+    protected $keywords = array();
 
     public function __construct($route, array $data) {
         $this->config   = App::getConfig();
@@ -40,7 +40,7 @@ class Page
     }
 
     public function getTitle($encode = true, $qualified = false) {
-        $title = [];
+        $title = array();
 
         if ($qualified === true) {
             $title[] = $this->config->get('page.title');

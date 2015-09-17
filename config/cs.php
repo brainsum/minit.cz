@@ -1,28 +1,34 @@
 <?php return array(
     'lang' => 'cs',
     'send' => 'crm@brainsum.com',
-    'sign' => ['DEVELOPED BY BRAINSUM', 2015],
-    'page' => [
+    'sign' => array('DEVELOPED BY BRAINSUM', 2015),
+    'page' => array(
         'title'         => 'Minit',
         'description'   => 'Fornetti Minit',
-        'keywords'      => ['fornetti', 'minit']
-    ],
+        'keywords'      => array('fornetti', 'minit')
+    ),
     'home' => '/o-nas',
-    'path' => [
-        'o-nas' => [
+    'path' => array(
+        'o-nas' => array(
             'title' => 'O nás',
+<<<<<<< HEAD
             'block' => ['splash', 'slider', 'what-we-have', 'our-history', 'philosophy', 'convergence']
         ],
         'pro-partnery' => [
+=======
+            'block' => array('splash', 'slider', 'what-we-have', 'nasa-historia', 'convergence')
+        ),
+        'pro-partnery' => array(
+>>>>>>> 48ab5ef7499205b738556b22fde03642f4583fd2
             'title' => 'Pro partnery',
-            'block' => ['splash', 'list-plain', 'list-year', 'form']
-        ],
-        'kontakty' => [
+            'block' => array('splash', 'list-plain', 'list-year', 'form')
+        ),
+        'kontakty' => array(
             'title' => 'Kontakty'
-        ]
-    ],
-    'captcha' => [
+        )
+    ),
+    'captcha' => array(
         'verify' => 'https://www.google.com/recaptcha/api/siteverify',
         'secret' => '6LeC-AwTAAAAAJTWk97C6XImTwgRer4_075J15KC'
-    ]
+    )
 );

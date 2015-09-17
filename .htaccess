@@ -6,9 +6,6 @@
 #	@author 	Székely Ádám <aszekely@brainsum.com>
 #	@license	Creative Commons 3.0 (Unported)
 
-DirectoryIndex app.php
-
-Options -Indexes -Includes -ExecCGI
 AddDefaultCharset UTF-8
 ServerSignature off
 
@@ -68,11 +65,9 @@ ServerSignature off
 #	URL REWRITE RULES
 
 <IfModule mod_rewrite.c>
-	Options +FollowSymLinks
-
 	RewriteEngine on
 	RewriteBase /
 	RewriteCond %{REQUEST_METHOD} ^TRACE
 	RewriteRule .* - [F]
-	RewriteRule !\.(js|json|css|ico|gif|jp?g|png|svg|xml|xsl|pdf|doc?|xls?|ppt?|woff[2]?|ttf|eot|map|less)$ app.php [L,NC]
+	RewriteRule !\.(js|json|css|ico|gif|jp?g|png|svg|xml|xsl|pdf|doc?|xls?|ppt?|woff[2]?|ttf|eot|map|less)$ index.php [L,NC]
 </IfModule>
