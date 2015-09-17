@@ -7,10 +7,7 @@ class Config
     protected $data = null;
 
     public function __construct($config) {
-        $file = App::getPath("config/{$config}.php");
-        print_r(array('file' => $file, 'data' => include('config/cs.php')));
-        die;
-        $this->data = include(App::getPath("config/{$config}.php"));
+        $this->data = include("config/{$config}.php");
     }
 
     public function get($path, $fallback = null) {

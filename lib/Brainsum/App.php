@@ -13,15 +13,11 @@ class App
     /** @var Router - Path/logic abstraction */
     protected static $_router;
 
-    /** @var string - Filesystem root of the application */
-    protected static $_root;
-
     /** @var string - Domain root of the application */
     protected static $_base;
 
-    public static function init($root, $config) {
+    public static function init($config) {
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
-        self::$_root    = trim($root, "\t\\/ ");
         self::$_config  = new Config($config);
 
         $path = substr($_SERVER['REQUEST_URI'], 1);
@@ -81,7 +77,7 @@ class App
     }
 
     public static function getAssetUrl($path) {
-        $file = self::$_root . (substr($path, 0, 1) === '/' ? $path : '/assets/'.$path);
+        $file = substr($path, 0, 1) === '/' ? $path : "/assets/{$path}";
         $time = null;
 
         if (file_exists($file) === true) {
@@ -91,10 +87,6 @@ class App
             $path.= "?v={$time}";
         }
         return $path;
-    }
-
-    public static function getPath($path = null) {
-        return $path === null ? self::$_root : implode(DIRECTORY_SEPARATOR, array(self::$_root, $path));
     }
 
     public static function getToken($renew = false) {
@@ -134,8 +126,7 @@ class App
     }
 
     public static function send($target, array $data) {
-        require_once(self::getPath('lib/PHPMailer/PHPMailerAutoload.php'));
-
+        require_once 'lib/PHPMailer/PHPMailerAutoload.php';
         $html = '';
 
         foreach ($data as $key => $value) {
