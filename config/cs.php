@@ -15,7 +15,7 @@
         ),
         'pro-partnery' => array(
             'title' => 'Pro partnery',
-            'block' => array('splash', 'cooperation', 'list-plain', 'list-year', 'form')
+            'block' => array('splash', 'cooperation', 'franchisee', 'list-year', 'form')
         ),
         'kontakty' => array(
             'title' => 'Kontakty'
