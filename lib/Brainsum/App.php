@@ -44,7 +44,7 @@ class App
 
     public static function getScheme() {
         $scheme = isset($_SERVER['REQUEST_SCHEME']) === true ? $_SERVER['REQUEST_SCHEME'] : null;
-        $scheme !== null && $scheme = $_SERVER['SERVER_PORT'] == 80 ? 'http' : 'https';
+        $scheme === null && $scheme = $_SERVER['SERVER_PORT'] == 80 ? 'http' : 'https';
 
         return $scheme;
     }
