@@ -1,6 +1,6 @@
 <?php return array(
     'lang' => 'cs',
-    'send' => 'crm@brainsum.com',
+    'send' => 'aszekely@brainsum.com',
     'sign' => array('DEVELOPED BY BRAINSUM', 2015),
     'page' => array(
         'title'         => 'Minit',

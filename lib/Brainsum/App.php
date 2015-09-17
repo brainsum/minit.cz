@@ -2,6 +2,8 @@
 
 namespace Brainsum;
 
+use ReCaptcha\ReCaptcha;
+
 class App
 {
     /** @var Config - Configuration options */
@@ -17,6 +19,9 @@ class App
     protected static $_base;
 
     public static function init($config) {
+        if ($_SESSION === null) {
+            session_start();
+        }
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
         self::$_config  = new Config($config);
 
@@ -38,6 +43,7 @@ class App
             echo self::render('layout', true);
         }
         catch (\Exception $e) {
+            print_r($e);die;
             self::redirect();
         }
     }
@@ -133,12 +139,9 @@ class App
             if ($key === 'g-recaptcha-response' || $key === 'token') {
                 continue;
             }
-            $html.= sprintf('<strong>%s:</strong> <span>%s</span><br />',
-                $key,
-                $value
-            );
+            $html.= sprintf('<strong>%s:</strong> <span>%s</span><br />', $key, $value);
         }
-        $html.= "<br/><br/><small>This is an auto-generated message from the Fornetti Minit FormHandler, please do not answer!</small>";
+        $html.= "<br/><br/><small>This is an auto-generated message, please do not answer!</small>";
 
         $mail = new \PHPMailer();
         $mail->setFrom($target);
@@ -146,45 +149,31 @@ class App
         $mail->msgHTML($html);
         $mail->Subject = '[FORM.Submit] Fornetti Minit (Contact)';
         $mail->AltBody = strip_tags(str_replace('<br/>', "\r\n", $html));
-        $mail->send();
+
+        if ($mail->send() === false) {
+            die($mail->ErrorInfo);
+        }
     }
 
     public static function validate($post) {
-        $allowEmpty = array('message', 'cooperation');
+        static $_allow;
 
+        if ($_allow === null) {
+            $_allow = array('message', 'cooperation');
+        }
         foreach ($post as $key => & $value) {
-            if (empty($value) === true && in_array($key, $allowEmpty) === false) {
+            if (empty($value) === true && in_array($key, $_allow) === false) {
                 return false;
             }
             $value = htmlspecialchars(strip_tags($value));
         }
-
-        // Validating token
-
         if ($post['token'] !== self::getToken()) {
-            throw new \Exception('Invalid CSRF token');
+            throw new \Exception("Invalid CSRF token");
         }
+        $captcha = new ReCaptcha(self::$_config->get('captcha.secret'));
 
-        // Validating reCAPTCHA
-
-        if (self::isProduction() === true) {
-            curl_setopt_array($curl = curl_init(), array(
-                CURLOPT_URL => self::$_config->get('captcha.verify'),
-                CURLOPT_POST => 2,
-                CURLOPT_POSTFIELDS => array(
-                    'secret' => self::$_config->get('captcha.secret'),
-                    'response' => $post['g-recaptcha-response']
-                ),
-                CURLOPT_SSL_VERIFYPEER => FALSE,
-                CURLOPT_RETURNTRANSFER => TRUE
-            ));
-            $data = curl_exec($curl);
-
-            curl_close($curl);
-
-            if ($data === FALSE || ($data = json_decode($data)) && $data->success === FALSE) {
-                throw new \Exception('Invalid captcha authentication');
-            }
+        if ($captcha->verify($post['g-recaptcha-response'], $_SERVER['REMOTE_ADDR'])->isSuccess() === false) {
+            throw new \Exception("Invalid reCAPTCHA code");
         }
         return $post;
     }
