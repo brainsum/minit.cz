@@ -11,7 +11,7 @@
     'path' => [
         'o-nas' => [
             'title' => 'O nás',
-            'block' => ['splash', 'slider', 'what-we-have', 'nasa-historia', 'convergence']
+            'block' => ['splash', 'slider', 'what-we-have', 'our-history', 'philosophy', 'convergence']
         ],
         'pro-partnery' => [
             'title' => 'Pro partnery',
