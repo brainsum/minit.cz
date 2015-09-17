@@ -7,7 +7,7 @@ class Config
     protected $data = null;
 
     public function __construct($config) {
-        $this->data = include(App::getPath("config/{$config}.php"));
+        $this->data = include("config/{$config}.php");
     }
 
     public function get($path, $fallback = null) {
