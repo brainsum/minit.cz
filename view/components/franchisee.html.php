@@ -4,7 +4,7 @@
     <div class="container">
         <h2 class="title">Staňte se franšízantem</h2>
         <h4 class="lead">Je to jednoduché</h4>
-        <ul class="list list-plain">
+        <ul class="list text">
             <li class="item">Můžete být právnická osoba nebo fyzická osoba s povolením podnikat.</li>
             <li class="item">Obstaráte si prostor nebo ho budete hledat ve spolupráci s námi.</li>
             <li class="item">Zabezpečíte všechny náležitosti, tedy pokladnu, váhu, mrazák, personál a podobně.</li>
