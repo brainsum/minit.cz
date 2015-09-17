@@ -46,8 +46,8 @@ $menu = Brainsum\App::getMenu();
         <!-- [MAIN.HEADER] LOGO -->
 
         <a id="logo" class="inline link" href="/">
-            <object data="img/fornetti-minit-logo.svg" type="image/svg+xml" width="94" height="40">
-                <img src="img/fornetti-minit-logo.png" alt="" width="94" height="40"/>
+            <object data="img/fornetti-minit-logo.svg" type="image/svg+xml" alt="Fornetti Minit logo" width="94" height="40">
+                <img src="img/fornetti-minit-logo.png" alt="Fornetti Minit logo" width="94" height="40"/>
             </object>
         </a>
 
