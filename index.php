@@ -1,10 +1,14 @@
 <?php
 
+/** @var string $_root */
+$_root = dirname(__FILE__);
+
 // PSR-0 NAMESPACE REGISTRATION
 
 spl_autoload_register(function ($className) {
-    include implode(DIRECTORY_SEPARATOR, array(__DIR__, 'lib', str_replace('\\', '/', $className).'.php'));
+    global $_root;
+    include implode(DIRECTORY_SEPARATOR, array($_root, 'lib', str_replace('\\', '/', $className).'.php'));
 });
 
 // Initializing application
-Brainsum\App::init(dirname(__FILE__), 'cs');
+Brainsum\App::init($_root, 'cs');
