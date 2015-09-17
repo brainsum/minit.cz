@@ -19,7 +19,7 @@ class App
     protected static $_base;
 
     public static function init($config) {
-        if ($_SESSION === null) {
+        if (isset($_SESSION) === false) {
             session_start();
         }
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
@@ -119,7 +119,7 @@ class App
     }
 
     public static function send($target, array $data) {
-        require_once '../PHPMailer/PHPMailerAutoload.php';
+        include 'lib/PhpMailer/PHPMailerAutoload.php';
         $html = '';
 
         foreach ($data as $key => $value) {
