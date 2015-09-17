@@ -66,8 +66,6 @@ ServerSignature off
 #	URL REWRITE RULES
 
 <IfModule mod_rewrite.c>
-	Options +FollowSymLinks
-
 	RewriteEngine on
 	RewriteBase /
 	RewriteCond %{REQUEST_METHOD} ^TRACE
