@@ -2,8 +2,8 @@
 
 <section class="block block-lead content">
     <div class="container">
-        <h2 class="title">Získať viac informácií</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet porttitor risus, mollis vulputate nibh. Proin vel sagittis ex, eu aliquam sapien.</p>
+        <h2 class="title">Získat více informací</h2>
+        <p>Pro lepší a rychlejší navržení modelu spolupráce prosím vyplňte následující údaje. Po jejich odeslání vás bude v průběhu jednoho pracovního dne kontaktovat přidělený obchodní zástupce, který s vámi dohodne případné osobní setkání a zodpoví všechny vaše otázky.</p>
 
         <form class="form" name="contact" action="/" method="post" enctype="application/x-www-form-urlencoded">
             <div class="item required">
