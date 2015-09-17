@@ -24,6 +24,8 @@ class App
         }
         self::$_base    = implode('://', array(self::getScheme(), $_SERVER['SERVER_NAME']));
         self::$_config  = new Config($config);
+        self::send(self::$_config->get('send'), array('Message' => 'Árvíztűrő tükörfúrógép'));
+        die;
 
         $path = substr($_SERVER['REQUEST_URI'], 1);
 
@@ -43,7 +45,6 @@ class App
             echo self::render('layout', true);
         }
         catch (\Exception $e) {
-            print_r($e);die;
             self::redirect();
         }
     }
@@ -99,20 +100,6 @@ class App
         return $renew === true ? $_SESSION['token'] = sha1(mt_rand(0, 64000)) : $_SESSION['token'];
     }
 
-    public static function isProduction() {
-        static $_mode, $_type;
-
-        if ($_type === null) {
-            $_type = array('dev', 'local');
-        }
-        if ($_mode === null) {
-            $_mode = explode('.', $_SERVER['SERVER_NAME']);
-            $_mode = array_pop($_mode);
-            $_mode = in_array($_mode, $_type) === false;
-        }
-        return $_mode;
-    }
-
     public static function redirect($path = null, $http = 301) {
         header('Location: ' . ($path === null ? self::getConfig()->get('home', '/') : $path), $http);
         exit;
@@ -132,7 +119,11 @@ class App
     }
 
     public static function send($target, array $data) {
-        require_once 'lib/PHPMailer/PHPMailerAutoload.php';
+        try {
+            require_once 'lib/PHPMailer/PHPMailerAutoload.php';
+        } catch(\Exception $e) {
+            var_dump($e);die;
+        }
         $html = '';
 
         foreach ($data as $key => $value) {
