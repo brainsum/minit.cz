@@ -1,12 +1,37 @@
 @import (reference) "../lib/config";
 
+/**
+ *
+ * @author Székely Ádám <aszekely@brainsum.com>
+ * @author Krisztian Pinter <kpinter@brainsum.com> 
+ *
+ */
+
 .layout-xs() {
     #splash {
         overflow: hidden;
+        height: 800px;
+        background: url(../img/bg-intro.jpg) no-repeat center 0;
 
         .layer {
             transform: translate3d(0,0,0);
             backface-visibility: hidden;
         }
+
+        .inline-container {
+
+        	.main,
+        	.text {
+        		text-align: left;
+        		opacity: .7;
+        		font-size: 1.9em;
+        	}
+
+        	.main {
+        		margin-bottom: .45em;
+        	}
+
+        } 
+
     }
 }
