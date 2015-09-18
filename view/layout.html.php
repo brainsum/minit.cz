@@ -75,23 +75,14 @@ $menu = Brainsum\App::getMenu();
     <div id="main-container"><?= (string) Brainsum\App::getPage() ?></div>
 </article>
 
-<script src="https://www.google.com/recaptcha/api.js" defer="defer"></script>
+<!-- [MAIN] SCRIPTS -->
 
-<!-- Google Analytics scripts -->
-<script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+<script src="https://www.google.com/recaptcha/api.js" defer="defer" async="async"></script>
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
-</script>
-<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
 <script type="text/javascript" src="js/gmap3.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-9977596-1");
-        pageTracker._trackPageview();
-    } catch(err) {}
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
 </body>
 </html>
