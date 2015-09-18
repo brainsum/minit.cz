@@ -19,11 +19,15 @@
 
         // dashed list
         &.text {
-            & > .item:before {
-                display: inline-block;
-                content: "-";
-                width: 15px;
-                opacity: .5;
+            & > .item {
+	          		padding-bottom: 1em;
+	            
+		            &:before {
+	                display: inline-block;
+	                content: "-";
+	                width: 15px;
+	                opacity: .5;
+	              }
             }
         }
     }
