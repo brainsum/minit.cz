@@ -2,13 +2,27 @@
 
 /**
  *
- * @author Krisztian Pinter <kpinter@brainsum.com> 
+ * @author Krisztian Pinter <kpinter@brainsum.com>
+ * @author Székely Ádám <aszekely@brainsum.com>
  *
  */
 
 .layout-xs() {
     #contact {
+        .address {
+            .row {
+                display: block;
+                font-weight: 400;
 
+                span {
+                    display: inline-block;
+
+                    & + span {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
         .inline {
 	          vertical-align: top;
 	          text-align: left;

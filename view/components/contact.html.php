@@ -1,22 +1,28 @@
-<!-- [MAIN.NODE-LIST] LEAD -->
+<!-- [MAIN.NODE-LIST] CONTACTS -->
 
-<div id="contact" class="block block-lead" id="lead">
-    <ul class="inline-container container">
+<div id="contact" class="block block-fade">
+    <ul class="inline-container container" property="copyrightHolder" typeof="Corporation">
         <li class="inline xs-4">
-            <h2>Adresa</h2>
-            <p>Fornetti Bohemia, spol. s r. o.<br />
-            Holubice 146<br />
-            683 51 okres Vyškov</p>
+            <h3 class="title">Adresa</h3>
+            <address class="address" property="address" typeof="PostalAddress">
+                <strong class="row">Fornetti Bohemia, spol. S R.o.</strong>
+                <span class="hidden" property="name">Fornetti</span>
+                <span class="row" property="streetAddress">Holubice 146</span>
+                <span class="row">
+                    <span property="postalCode">683 51</span>
+                    <span class="hidden" property="addressLocality">Holubice</span>
+                    <span>okres</span>
+                    <span property="addressRegion">Vyškov</span>
+                </span>
+            </address>
         </li>
         <li class="inline xs-4">
-            <h2>E-mail</h2>
-            <p><strong class="strong">Kontakt</strong><br />
-            <a href="mailto:fornetti@fornetti.cz">fornetti@fornetti.cz</a></p>
+            <h3 class="title">E-mail</h3>
+            <a href="mailto:fornetti@fornetti.cz" property="email" content="fornetti@fornetti.cz">fornetti@fornetti.cz</a>
         </li>
         <li class="inline xs-4">
-            <h2>Telefonní čísla</h2>
-            <p><strong class="strong">Tel./fax.</strong><br />
-            <a href="tel:00 420 517 375 322">00420/ 517 375 322</a></p>
+            <h3 class="title">Telefonní čísla</h3>
+            <span property="telephone" content="+420517375322">00420 / 517 375 322</span>
         </li>
     </ul>
 </div>

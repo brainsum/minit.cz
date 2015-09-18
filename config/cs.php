@@ -28,6 +28,7 @@
         )
     ),
     'google' => array(
+        'api'       => 'AIzaSyBI1iZhFDbanI2iXAPgZRHPcBcU2N3f724',
         'analytics' => 'UA-9977596-1',
         'recaptcha' => '6LeC-AwTAAAAAJTWk97C6XImTwgRer4_075J15KC'
     )

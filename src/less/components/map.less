@@ -8,10 +8,19 @@
 
 .layout-xs() {
     #map {
+        position: relative;
+        height: 450px;
+        max-height: 100%;
+        border-top: 5px solid darken(@c-head, 10%);
 
-        #gmap{
-					height: 550px;
-					width: 100%;
-				}
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            object-fit: cover;
+            object-position: center center;
+        }
     }
 }

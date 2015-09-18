@@ -3,6 +3,7 @@
 
 $page = Brainsum\App::getPage();
 $menu = Brainsum\App::getMenu();
+$name = Brainsum\App::getConfig()->get('page.title');
 
 ?><!DOCTYPE html>
 
@@ -23,7 +24,7 @@ $menu = Brainsum\App::getMenu();
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
 
     <meta property="og:type" content="website"/>
-    <meta property="og:site_name" content="<?= $page->getTitle() ?>"/>
+    <meta property="og:site_name" content="<?= $name ?>"/>
     <meta property="og:description" content="<?= $page->getDescription() ?>"/>
     <meta property="og:url" content="<?= Brainsum\App::getUrl() ?>"/>
     <meta property="og:image" content="<?= Brainsum\App::getUrl('assets/img/fornetti-minit-opengraph.gif') ?>"/>
@@ -36,7 +37,7 @@ $menu = Brainsum\App::getMenu();
 </head>
 
 <body class="page-<?= $page->getRoute() ?>" vocab="http://schema.org/" typeof="WebPage">
-<meta property="name" content="<?= $page->getTitle() ?>"/>
+<meta property="name" content="<?= $name ?>"/>
 <meta property="isFamilyFriendly" content="true"/>
 
 <!-- [MAIN] HEADER -->
@@ -81,8 +82,8 @@ $menu = Brainsum\App::getMenu();
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
-<script type="text/javascript" src="js/gmap3.min.js"></script>
+<!--script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+<script type="text/javascript" src="js/gmap3.min.js"></script-->
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
 </body>
 </html>
