@@ -23,7 +23,8 @@
             'block' => array('splash', 'cooperation', 'franchisee', 'certifications', 'short-history', 'form', 'faq')
         ),
         'kontakty' => array(
-            'title' => 'Kontakty'
+            'title' => 'Kontakty',
+            'block' => array('contact', 'map')
         )
     ),
     'captcha' => array(

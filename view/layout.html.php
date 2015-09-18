@@ -83,6 +83,10 @@ $menu = Brainsum\App::getMenu();
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+<script type="text/javascript" src="js/gmap3.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript">
     try {
         var pageTracker = _gat._getTracker("UA-9977596-1");
