@@ -30,6 +30,7 @@ $menu = Brainsum\App::getMenu();
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link type="text/css" rel="stylesheet" href="<?= Brainsum\App::getAssetUrl('css/xs.css') ?>" media="all"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
 
     <!--[if (IE 10)&(IEMobile)]><style>@-ms-viewport{width:auto!important}</style><![endif]-->
 </head>
