@@ -23,10 +23,6 @@
                 <input class="input" id="info-email" name="email" type="email" maxlength="255" required=""/>
             </div>
             <div class="item item-expand">
-                <label class="label" for="info-message">Stručný popis Vašej prevádzky</label>
-                <textarea class="input" name="message" id="info-message"></textarea>
-            </div>
-            <div class="item item-expand">
                 <label class="label" for="info-cooperation">Vaše představa o spolupráci / o jaký sortiment máte zájem</label>
                 <textarea class="input" name="cooperation" id="info-cooperation"></textarea>
             </div>
