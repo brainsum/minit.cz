@@ -190,12 +190,14 @@
         font-weight: 700;
         transition: .2s ease-in-out;
 
-        &:hover {
-            background: fade(@c-dark, 10%);
+        &:hover, &:focus, &:active {
             text-decoration: none;
         }
+        &:hover {
+            background: fade(@c-dark, 13%);
+        }
         &:active {
-            background: fade(@c-dark, 15%);
+            background: fade(@c-dark, 21%);
         }
         &-next:after {
             display: inline-block;
