@@ -1,0 +1,1 @@
+(function(a,e){var b=e.getElementById("script-ga"),c=b.getAttribute("data-id"),d=function(a,b){try{a._getTracker(b)._trackPageview()}catch(c){console.error("> gat",c)}};void 0===a._gat?b.addEventListener("load",function(){d(a._gat,c)},!1):d(a._gat,c)})(window,document);

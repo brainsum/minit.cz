@@ -66,6 +66,10 @@ class Page
         return $flatten === true ? implode(', ', $keywords) : $keywords;
     }
 
+    public function getAnalyticsCode() {
+        return $this->config->get('google.analytics');
+    }
+
     public function render() {
         $html = '';
 

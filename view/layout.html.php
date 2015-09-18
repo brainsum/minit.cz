@@ -75,19 +75,10 @@ $menu = Brainsum\App::getMenu();
     <div id="main-container"><?= (string) Brainsum\App::getPage() ?></div>
 </article>
 
-<script src="https://www.google.com/recaptcha/api.js" defer="defer"></script>
+<!-- [MAIN] SCRIPTS -->
 
-<!-- Google Analytics scripts -->
-<script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
-<script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-9977596-1");
-        pageTracker._trackPageview();
-    } catch(err) {}
-</script>
+<script src="https://www.google.com/recaptcha/api.js" defer="defer" async="async"></script>
+<script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
+<script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
 </body>
 </html>

@@ -152,7 +152,7 @@ class App
         if ($post['token'] !== self::getToken()) {
             throw new \Exception("Invalid CSRF token");
         }
-        $captcha = new ReCaptcha(self::$_config->get('secret'));
+        $captcha = new ReCaptcha(self::$_config->get('google.recaptcha'));
 
         if ($captcha->verify($post['g-recaptcha-response'], $_SERVER['REMOTE_ADDR'])->isSuccess() === false) {
             throw new \Exception("Invalid reCAPTCHA code");
