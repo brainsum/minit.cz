@@ -1,6 +1,6 @@
 <!-- [MAIN.NODE-LIST] CONTACTS -->
 
-<div id="contact" class="block block-fade">
+<div id="contact" class="block block-lead">
     <ul class="inline-container container" property="copyrightHolder" typeof="Corporation">
         <li class="inline xs-4">
             <h3 class="title">Adresa</h3>

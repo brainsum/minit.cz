@@ -70,6 +70,10 @@ class Page
         return $this->config->get('google.analytics');
     }
 
+    public function getGoogleApiKey() {
+        return $this->config->get('google.api');
+    }
+
     public function render() {
         $html = '';
 

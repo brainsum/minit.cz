@@ -79,11 +79,9 @@ $name = Brainsum\App::getConfig()->get('page.title');
 <!-- [MAIN] SCRIPTS -->
 
 <script src="https://www.google.com/recaptcha/api.js" defer="defer" async="async"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init" defer="defer"></script>
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!--script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
-<script type="text/javascript" src="js/gmap3.min.js"></script-->
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
 </body>
 </html>

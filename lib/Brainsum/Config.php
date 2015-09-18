@@ -11,6 +11,12 @@ class Config
     }
 
     public function get($path, $fallback = null) {
+        if (is_array($path) === true) {
+            $data = array();
+
+            foreach ($path as $key) $data[] = $this->get($key, $fallback);
+            return $data;
+        }
         $data = $this->data;
 
         if ($this->data !== null) {

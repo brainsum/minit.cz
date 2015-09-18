@@ -29,6 +29,11 @@
     ),
     'google' => array(
         'api'       => 'AIzaSyBI1iZhFDbanI2iXAPgZRHPcBcU2N3f724',
+        'map'       => array(
+            'lat'   => 49.1724575,
+            'lng'   => 16.8205382,
+            'zoom'  => 11
+        ),
         'analytics' => 'UA-9977596-1',
         'recaptcha' => '6LeC-AwTAAAAAJTWk97C6XImTwgRer4_075J15KC'
     )
