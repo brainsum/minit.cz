@@ -8,7 +8,7 @@
                 <h5 class="year">1997</h5>
                 <div class="info">
                     <ul class="list text">
-                        <li class="item">v Maďarsku vzniká Fornetti, postupně se rozroste na 13 trhů</strong></li>
+                        <li class="item">v Maďarsku vzniká Fornetti, postupně se rozroste na 13 trhů</li>
                     </ul>                    
                 </div>
             </li>

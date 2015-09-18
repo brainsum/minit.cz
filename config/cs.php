@@ -27,7 +27,8 @@
             'block' => array('contact', 'map')
         )
     ),
-    'captcha' => array(
-        'secret' => '6LeC-AwTAAAAAJTWk97C6XImTwgRer4_075J15KC'
+    'google' => array(
+        'analytics' => 'UA-9977596-1',
+        'recaptcha' => '6LeC-AwTAAAAAJTWk97C6XImTwgRer4_075J15KC'
     )
 );
