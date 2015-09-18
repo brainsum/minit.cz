@@ -12,7 +12,7 @@ $zoom   = $config->get('google.map.zoom');
     <!-- [COMPONENT] NOSCRIPT FALLBACK -->
 
     <noscript aria-hidden="true">
-        <div class="container"><?=sprintf('<img class="fallback" src="https://maps.googleapis.com/maps/api/staticmap?%s"/>',
+        <div class="container"><?=sprintf('<img class="fallback" src="https://maps.googleapis.com/maps/api/staticmap?%s" alt=""/>',
             http_build_query(array(
                 'maptype'   => 'roadmap',
                 'sensor'    => false,
@@ -32,5 +32,5 @@ $zoom   = $config->get('google.map.zoom');
         'lat' => $lat,
         'lng' => $lng,
         'zoom' => $zoom
-    ))) ?>" data></div>
+    ))) ?>"></div>
 </div>
