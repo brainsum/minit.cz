@@ -25,4 +25,17 @@
             <span property="telephone" content="+420517375322">00420 / 517 375 322</span>
         </li>
     </ul>
+
+    <ul class="inline-container container block address" property="copyrightHolder" typeof="Corporation">
+        <li class="inline xs-4">
+            <h3 class="title">Služba zákazníkům</h3>
+            <span class="row">mobil</span>
+            <span property="telephone row" content="606165807">606 165 807</span>
+        </li>
+        <li class="inline xs-4">
+            <h3 class="title">Fakturace</h3>
+            <span class="row">Jarmila Tupá</span>
+            <span property="telephone row" content="517375322">517 375 322</span>
+        </li>
+    </ul>
 </div>
