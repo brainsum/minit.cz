@@ -62,6 +62,10 @@ class App
         return self::$_router->getPage();
     }
 
+    public static function getRouter() {
+        return self::$_router;
+    }
+
     public static function getMenu() {
         $menu = array();
         $data = self::$_config->get('path', array());
