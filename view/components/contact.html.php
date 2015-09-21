@@ -1,7 +1,7 @@
 <!-- [MAIN.NODE-LIST] CONTACTS -->
 
 <div id="contact" class="block block-lead">
-    <ul class="inline-container container" property="copyrightHolder" typeof="Corporation" style="display:block;">
+    <ul class="inline-container container row-1" property="copyrightHolder" typeof="Corporation">
         <li class="inline xs-4">
             <h3 class="title">Adresa</h3>
             <address class="address" property="address" typeof="PostalAddress">
@@ -26,7 +26,7 @@
         </li>
     </ul>
 
-    <ul class="inline-container container block address" property="copyrightHolder" typeof="Corporation" style="display:block;">
+    <ul class="inline-container container block row-2" property="copyrightHolder" typeof="Corporation">
         <li class="inline xs-4">
             <h3 class="title">Služba zákazníkům</h3>
             <span class="row">mobil</span>
