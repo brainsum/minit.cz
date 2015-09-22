@@ -3,7 +3,7 @@
     'sign' => array('DEVELOPED BY BRAINSUM', 2015),
     'mail' => array(
         'from' => 'dev@brainsum.com',
-        'send' => 'crm@brainsum.com'
+        'send' => 'fornetti@fornetti.cz'
     ),
 
     'home' => '/o-nas',

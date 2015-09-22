@@ -92,7 +92,7 @@ $path = Brainsum\App::getRouter()->getPath();
         <li class="inline col xs-3">
             <h6 class="title">Pro partnery</h6>
             <ul class="list">
-                <li class="item"><a class="link" href="/pro-partnery#vyhody-spoluprace">Výhodni spolupráce</a></li>
+                <li class="item"><a class="link" href="/pro-partnery#vyhody-spoluprace">Výhody spolupráce</a></li>
                 <li class="item"><a class="link" href="/pro-partnery#certifikaty">Certifikáty</a></li>
                 <li class="item"><a class="link" href="/pro-partnery#faq">FAQ</a></li>
             </ul>
