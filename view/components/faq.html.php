@@ -15,7 +15,7 @@
         Během spolupráce se zabezpečuje také okamžitý servis dodaného technologického zařízení. Dodáme také základní marketingovou výzdobu prodejny MINIT.</p>
 
         <h3>Jaký je postup od podání žádosti po uzavření smlouvy o spolupráci?</h3>
-        <p>První kontakt s naší společností proběhne buď vyplněním výše uvedeného online nebo emailem na adrese <a href="mailto:fornetti@fornetti.cz">fornetti@fornetti.cz</a><br />
+        <p>První kontakt s naší společností proběhne buď vyplněním výše uvedeního online formuláře nebo emailem na adrese <a href="mailto:fornetti@fornetti.cz">fornetti@fornetti.cz</a><br />
         Po vyplnění online formuláře vás bude kontaktovat některý z našich obchodních zástupců. Podepsání smlouvy o spolupráci předchází vždy osobní střetnutí se zástupcem společnosti MINIT, který prověří důvěryhodnost a odhodlání potencionálního obchodního partnera, vhodnost lokality a prostor na vybudování provozu. Je třeba si uvědomit, že každý jeden franšízant ovlivňuje finální podobu a kvalitu produktů MINIT, proto dbáme na to, abychom spolupracovali se spolehlivými partnery, kteří budou společně s námi šířit dobré jméno MINIT.</p>
     </div>
 </section>
