@@ -18,18 +18,24 @@
         .row {
             display: block;
             font-weight: 400;
-
-            span {
-                display: inline-block;
-
-                & + span {
-                    margin-left: 5px;
-                }
-            }
         }
         .inline {
             vertical-align: top;
             text-align: left;
+        }
+    }
+    #address {
+        .row span {
+            display: inline-block;
+
+            & + span {
+                margin-left: 5px;
+            }
+        }
+    }
+    #phone {
+        .row + .row {
+            margin-top: @s-padding;
         }
     }
     #map {
