@@ -11,7 +11,7 @@
             <li class="item">Složíte vratnou kauci.</li>
             <li class="item">Dodáme vám potřebné vybavení na pečení a na výzdobu prodejny.</li>
             <li class="item">Náš zástupce vše přijde nainstalovat do prodejny a vyškolí vaše zaměstnance.</li>
-            <li class="item">To je vše! Jste připraven prodat první minitky.</li>
+            <li class="item">To je vše! Jste připraveni prodat první minitky.</li>
         </ul>
     </div>
 </section>
