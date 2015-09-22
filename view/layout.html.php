@@ -100,7 +100,7 @@ $path = Brainsum\App::getRouter()->getPath();
         <li class="inline col xs-3">
             <h6 class="title">Online komunita</h6>
             <ul class="list">
-                <li class="item"><a class="link" href="#">Facebook</a></li>
+                <li class="item"><a class="link" href="//www.facebook.com/minitkacz">Facebook</a></li>
             </ul>
         </li>
         <li class="inline col xs-3">
