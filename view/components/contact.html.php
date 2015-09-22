@@ -23,12 +23,12 @@
         <li class="inline xs-4" id="phone">
             <h3 class="title">Telefonní čísla</h3>
             <span class="row">
-                <strong>Služby pro zákazníky</strong>
-                <span class="row" property="telephone" content="+420606165807">(+420) 606 165 807</span>
+                <strong>Tel./fax</strong>
+                <span class="row" property="telephone" content="+420517375322">(+420) 517 375 322</span>
             </span>
             <span class="row">
-                <strong>Ústředna</strong>
-                <span class="row" property="telephone" content="+420517375322">(+420) 517 375 322</span>
+                <strong>Služby pro zákazníky</strong>
+                <span class="row" property="telephone" content="+420606165807">(+420) 606 165 807</span>
             </span>
             <span class="row">
                 <strong>Fakturace</strong>
