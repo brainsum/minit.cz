@@ -2,7 +2,7 @@
 
 <section id="contact" class="block block-lead" property="copyrightHolder" typeof="Corporation">
     <ul class="inline-container container row-1">
-        <li class="inline xs-4">
+        <li class="inline xs-4" id="address">
             <h3 class="title">Adresa</h3>
             <address class="address" property="address" typeof="PostalAddress">
                 <strong class="row">Fornetti Bohemia, spol. S R.o.</strong>
@@ -20,13 +20,20 @@
             <h3 class="title">E-mail</h3>
             <a href="mailto:fornetti@fornetti.cz" property="email" content="fornetti@fornetti.cz">fornetti@fornetti.cz</a>
         </li>
-        <li class="inline xs-4">
+        <li class="inline xs-4" id="phone">
             <h3 class="title">Telefonní čísla</h3>
-            <span property="telephone" content="+420517375322">00420 / 517 375 322</span>
+            <span class="row">
+                <strong>Služby pro zákazníky</strong>
+                <span class="row" property="telephone" content="+420606165807">(+420) 606 165 807</span>
+            </span>
+            <span class="row">
+                <strong>Ústředna</strong>
+                <span class="row" property="telephone" content="+420517375322">(+420) 517 375 322</span>
+            </span>
         </li>
     </ul>
 
-    <ul class="inline-container container row-2">
+    <!--ul class="inline-container container row-2">
         <li class="inline xs-4">
             <h3 class="title">Služba zákazníkům</h3>
             <span class="row">Mobil</span>
@@ -37,5 +44,5 @@
             <span class="row">Jarmila Tupá</span>
             <span property="telephone" content="+420517375322">517 375 322</span>
         </li>
-    </ul>
+    </ul-->
 </section>
