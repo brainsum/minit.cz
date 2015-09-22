@@ -1,6 +1,7 @@
 <!-- [MAIN.NODE-TEXT] CONTENT -->
 
-<section id="philosophy" class="block block-lead content">
+<section class="region" id="filozofie">
+<div class="block block-lead content">
     <div class="container">
         <h2 class="title">Filozofie</h2>
         <p>Nabízíme už více jak 50 druhů produktů rozličných chutí, velikostí a tvarů. Ačkoliv jsou různé, řídíme se při výrobě každého z nich stejnou filozofií.</p>
@@ -37,4 +38,5 @@
 	        </li>
 	    </ul>
     </div>
+</div>
 </section>

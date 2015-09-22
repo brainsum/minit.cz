@@ -1,6 +1,7 @@
 <!-- [MAIN.NODE-ITEM] SLIDER -->
 
-<section class="block block-lead slider">
+<section class="region" id="novinky">
+<div class="block block-lead slider">
     <input id="slider-0-0" class="hidden" name="x-slider" type="radio" checked=""/>
     <input id="slider-0-1" class="hidden" name="x-slider" type="radio"/>
     <input id="slider-0-2" class="hidden" name="x-slider" type="radio"/>
@@ -41,7 +42,7 @@
             <div class="inline">
                 <h3 class="title">Vychutnejte si novinku – makové Rollo</h3>
                 <figure class="inline-container container">
-                    <img class="inline image" src="img/fornetti-minit-croissant-poppy-seed.png" srcset="img/fornetti-minit-croissant-poppy-seed.png 1x, img/hd/fornetti-minit-croissant-poppy-seed.png 2x img/hq/fornetti-minit-croissant-poppy-seed.png 3x" alt="Fornetti Minit Makové Rollo" width="476" height="460" />
+                    <img class="inline image" src="img/fornetti-minit-croissant-poppy-seed.png" srcset="img/fornetti-minit-croissant-poppy-seed.png 1x, img/hd/fornetti-minit-croissant-poppy-seed.png 2x, img/hq/fornetti-minit-croissant-poppy-seed.png 3x" alt="Fornetti Minit Makové Rollo" width="476" height="460" />
                     <figcaption class="inline xs-6 text">
                         <p>Mák patří k naší zemi stejně jako špagety k Itálii. Vaše velká poptávka po makových produktech nám vnukla skvělý nápad. Stávajícímu skořicovému Rollu tak přibyl makový bratr!</p>
                         <strong class="last">Vychutnat si ho můžete již teď na všech prodejnách.</strong>
@@ -50,4 +51,5 @@
             </div>
         </li>
     </ul>
+</div>
 </section>

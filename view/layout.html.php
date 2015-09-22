@@ -77,6 +77,49 @@ $path = Brainsum\App::getRouter()->getPath();
     <div id="main-container"><?= (string) Brainsum\App::getPage() ?></div>
 </article>
 
+<!-- [MAIN] FOOTER / CONTENT-INFO -->
+
+<footer id="footer" class="block">
+    <ul class="inline-block container">
+        <li class="inline col xs-3">
+            <h6 class="title">O nás</h6>
+            <ul class="list">
+                <li class="item"><a class="link" href="/o-nas#novinky">Novinky</a></li>
+                <li class="item"><a class="link" href="/o-nas#historie">Historie</a></li>
+                <li class="item"><a class="link" href="/o-nas#filozofie">Filozofie</a></li>
+            </ul>
+        </li>
+        <li class="inline col xs-3">
+            <h6 class="title">Pro partnery</h6>
+            <ul class="list">
+                <li class="item"><a class="link" href="/pro-partnery#vyhody-spoluprace">Výhodni spolupráce</a></li>
+                <li class="item"><a class="link" href="/pro-partnery#certifikaty">Certifikáty</a></li>
+                <li class="item"><a class="link" href="/pro-partnery#faq">FAQ</a></li>
+            </ul>
+        </li>
+        <li class="inline col xs-3">
+            <h6 class="title">Online komunita</h6>
+            <ul class="list">
+                <li class="item"><a class="link" href="#">Facebook</a></li>
+            </ul>
+        </li>
+        <li class="inline col xs-3">
+            <h6 class="title">Kontakty</h6>
+            <ul class="list">
+                <li class="item"><a class="link" href="/kontakty">Obecné</a></li>
+            </ul>
+            <dl class="list term">
+                <dt class="name">Tel./fax:</dt>
+                <dd class="data">(+420) 517 375 322</dd>
+                <dt class="name">Služby pro zákazníky</dt>
+                <dd class="data">(+420) 606 165 807</dd>
+                <dt class="name">Fakturace</dt>
+                <dd class="data">(+420) 517 375 322</dd>
+            </dl>
+        </li>
+    </ul>
+</footer>
+
 <!-- [MAIN] SCRIPTS -->
 
 <script src="https://www.google.com/recaptcha/api.js" defer="defer" async="async"></script>

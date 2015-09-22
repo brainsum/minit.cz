@@ -9,15 +9,18 @@
 
 .layout-xs() {
     #splash {
-        background: url(../img/bg-intro.jpg) no-repeat center 0;
-        background-size: cover;
+        height: ~"calc(100vh - @{s-head})";
         overflow: hidden;
 
+        & > .block {
+            background: url(../img/bg-intro.jpg) no-repeat center 0;
+            background-size: cover;
+            height: 100%;
+        }
         .layer {
             transform: translate3d(0,0,0);
             backface-visibility: hidden;
         }
-
         .inline-container {
 
         	.main,

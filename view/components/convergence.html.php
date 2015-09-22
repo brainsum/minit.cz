@@ -1,6 +1,7 @@
 <!-- [MAIN.NODE-TEXT] CONTENT -->
 
-<section class="block block-fade content" id="convergence">
+<section class="region" id="convergence">
+<div class="block block-fade content">
     <div class="container">
         <h2 class="title">Chcete mít vlastní prodejnu?</h2>
         <div class="text">
@@ -9,4 +10,5 @@
         </div>
         <a class="btn btn-next" href="/pro-partnery">Chci se dozvědět víc</a>
     </div>
+</div>
 </section>

@@ -1,6 +1,7 @@
 <!-- [MAIN.NODE-FORM] -->
 
-<section class="block block-lead content">
+<section class="">
+<div class="block block-lead content">
     <div class="container">
         <h2 class="title">Získat více informací</h2>
         <p>Pro lepší a rychlejší navržení modelu spolupráce prosím vyplňte následující údaje. Po jejich odeslání vás bude v průběhu jednoho pracovního dne kontaktovat přidělený obchodní zástupce, který s vámi dohodne případné osobní setkání a zodpoví všechny vaše otázky.</p>
@@ -34,4 +35,5 @@
             <input type="hidden" name="token" value="<?= Brainsum\App::getToken(true) ?>"/>
         </form>
     </div>
+</div>
 </section>

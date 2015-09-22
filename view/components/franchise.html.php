@@ -1,6 +1,7 @@
 <!-- [MAIN.NODE-LIST] PLAIN -->
 
-<section class="block block-fade content">
+<section class="region">
+<div class="block block-fade content">
     <div class="container">
         <h2 class="title">Staňte se franšízantem</h2>
         <h4 class="lead">Je to jednoduché</h4>
@@ -14,4 +15,5 @@
             <li class="item">To je vše! Jste připraveni prodat první minitky.</li>
         </ul>
     </div>
+</div>
 </section>

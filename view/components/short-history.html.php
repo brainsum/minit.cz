@@ -1,6 +1,7 @@
 <!-- [MAIN.NODE-LIST] YEARS -->
 
-<section id="short-history" class="block block-fade content">
+<section id="short-history" class="region">
+<div class="block block-fade content">
     <div class="container">
         <h2 class="title">Historie v kostce</h2>
         <ul class="list list-year">
@@ -39,4 +40,5 @@
             </li>
         </ul>
     </div>
+</div>
 </section>

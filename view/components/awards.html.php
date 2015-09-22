@@ -1,6 +1,7 @@
 <!-- [MAIN.NODE-LIST] YEARS -->
 
-<section class="block block-lead content">
+<section class="region">
+<div class="block block-lead">
     <div class="container">
         <h2 class="title">Ocenění</h2>
         <ul class="list list-year">
@@ -9,7 +10,7 @@
                 <div class="info">
                     <ul class="list text">
                         <li class="item">konateľ František Ambrovics finalistom súťaže <strong>Podnikateľ roka 2009</strong></li>
-                        <li class="item">8. miesto v súťaži <strong>Diamanty slovenského biznisu</strong></li>                        
+                        <li class="item">8. miesto v súťaži <strong>Diamanty slovenského biznisu</strong></li>
                     </ul>
                     <ul class="list icon">
                         <li class="item"><img class="logo" src="img/award-diamanty-slovenskeho-biznisu.png" alt="Diamanty slovenského biznisu" width="134" height="83" /></li>
@@ -57,4 +58,5 @@
             </li>
         </ul>
     </div>
+</div>
 </section>

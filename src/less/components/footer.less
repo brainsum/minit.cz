@@ -1,0 +1,39 @@
+@import (reference) "../lib/config.less";
+
+.layout-xs() {
+    #footer {
+        background: @c-foot;
+        border-top: @s-head-border solid #fff;
+        box-shadow: inset fade(#000, 13%) 0 1px 3px;
+        opacity: .8;
+
+        .col {
+            text-align: left;
+            vertical-align: top;
+        }
+        .title {
+            font-size: 1em;
+            text-transform: uppercase;
+            padding-bottom: @s-padding;
+        }
+        .title, .link, .name, .data {
+            color: #000;
+        }
+        .term {
+            margin-top: 1em;
+        }
+        .link, .name, .data {
+            font-size: round(12 / 16em, 3);
+        }
+        .name, .data {
+            display: inline-block;
+            width: 50%;
+            margin: 0;
+            line-height: (21 / 13em);
+            vertical-align: top;
+        }
+        .name {
+            font-weight: 700;
+        }
+    }
+}
