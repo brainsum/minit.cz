@@ -41,7 +41,7 @@
             <div class="inline">
                 <h3 class="title">Vychutnejte si novinku – makové Rollo</h3>
                 <figure class="inline-container container">
-                    <img class="inline image" src="img/fornetti-minit-nugat.png" srcset="img/fornetti-minit-nugat.png 1x, img/hd/fornetti-minit-nugat.png 2x" alt="Fornetti Minit Nugát" width="476" height="300" />
+                    <img class="inline image" src="img/fornetti-minit-croissant-poppy-seed.png" srcset="img/fornetti-minit-croissant-poppy-seed.png 1x, img/hd/fornetti-minit-croissant-poppy-seed.png 2x img/hq/fornetti-minit-croissant-poppy-seed.png 3x" alt="Fornetti Minit Makové Rollo" width="476" height="460" />
                     <figcaption class="inline xs-6 text">
                         <p>Mák patří k naší zemi stejně jako špagety k Itálii. Vaše velká poptávka po makových produktech nám vnukla skvělý nápad. Stávajícímu skořicovému Rollu tak přibyl makový bratr!</p>
                         <strong class="last">Vychutnat si ho můžete již teď na všech prodejnách.</strong>
