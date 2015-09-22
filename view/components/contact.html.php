@@ -1,7 +1,7 @@
 <!-- [MAIN.NODE-LIST] CONTACTS -->
 
-<div id="contact" class="block block-lead">
-    <ul class="inline-container container row-1" property="copyrightHolder" typeof="Corporation">
+<section id="contact" class="block block-lead" property="copyrightHolder" typeof="Corporation">
+    <ul class="inline-container container row-1">
         <li class="inline xs-4">
             <h3 class="title">Adresa</h3>
             <address class="address" property="address" typeof="PostalAddress">
@@ -26,16 +26,16 @@
         </li>
     </ul>
 
-    <ul class="inline-container container block row-2" property="copyrightHolder" typeof="Corporation">
+    <ul class="inline-container container row-2">
         <li class="inline xs-4">
             <h3 class="title">Služba zákazníkům</h3>
-            <span class="row">mobil</span>
-            <span property="telephone row" content="606165807">606 165 807</span>
+            <span class="row">Mobil</span>
+            <span property="telephone" content="+420606165807">606 165 807</span>
         </li>
         <li class="inline xs-4">
             <h3 class="title">Fakturace</h3>
             <span class="row">Jarmila Tupá</span>
-            <span property="telephone row" content="517375322">517 375 322</span>
+            <span property="telephone" content="+420517375322">517 375 322</span>
         </li>
     </ul>
-</div>
+</section>
