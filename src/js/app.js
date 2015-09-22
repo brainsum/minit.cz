@@ -15,6 +15,9 @@
     };
     var assignMap = function (id, maps) {
         var n = document.getElementById(id);
+        if (n === null) {
+            return;
+        }
         var c = JSON.parse(n.getAttribute('data-config'));
         var p = new maps.LatLng(c.lat, c.lng);
 
@@ -28,10 +31,13 @@
             scrollwheel: false
         });
         _m.pin = new maps.Marker({position: p, map: _m.map});
+
+        window.addEventListener('resize', function () {
+            _m.map.setCenter(_m.pos)
+        }, false);
     };
 
     window._gat === undefined && _n.addEventListener('load', function () {assignPage(window._gat, _i)}, false) || assignPage(window._gat, _i);
-    window.addEventListener('resize', function () {_m.map.setCenter(_m.pos)}, false);
     window.minit = {
         init: function () {assignMap('map-js', google.maps)}
     }

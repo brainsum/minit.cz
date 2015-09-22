@@ -30,6 +30,10 @@
                 <strong>Ústředna</strong>
                 <span class="row" property="telephone" content="+420517375322">(+420) 517 375 322</span>
             </span>
+            <span class="row">
+                <strong>Fakturace</strong>
+                <span class="row">(+420) 517 375 322</span>
+            </span>
         </li>
     </ul>
 
