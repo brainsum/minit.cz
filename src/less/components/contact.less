@@ -9,12 +9,12 @@
 
 .layout-xs() {
     #contact {
-	    	.container {
-		    	  display: block;
-	    	}
-	    	.block.row-2 .title {
-		    	  min-height: 3.07em;
-	    	}
+        .container + .container {
+            margin-top: @s-padding * 4;
+        }
+        .row-2 .title {
+            min-height: 3.07em;
+        }
         .row {
             display: block;
             font-weight: 400;
@@ -28,8 +28,8 @@
             }
         }
         .inline {
-	          vertical-align: top;
-	          text-align: left;
+            vertical-align: top;
+            text-align: left;
         }
     }
     #map {

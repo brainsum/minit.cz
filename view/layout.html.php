@@ -4,6 +4,7 @@
 $page = Brainsum\App::getPage();
 $menu = Brainsum\App::getMenu();
 $name = Brainsum\App::getConfig()->get('page.title');
+$path = Brainsum\App::getRouter()->getPath();
 
 ?><!DOCTYPE html>
 
@@ -79,11 +80,11 @@ $name = Brainsum\App::getConfig()->get('page.title');
 <!-- [MAIN] SCRIPTS -->
 
 <script src="https://www.google.com/recaptcha/api.js" defer="defer" async="async"></script>
-<?php if (Brainsum\App::getRouter()->getPath() === 'kontakty') : ?>
-<script src="https://maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init"></script>
+
+<?php if ($path === 'kontakty') : ?>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init"></script>
 <?php endif ?>
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
-
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
 </body>
 </html>
