@@ -33,7 +33,7 @@
                         <p>Otevřeli jsme zbrusu novou prodejnu v Mercury centru v Českých Budějovicích. Kompletně nový styl, příjemné prostředí a stále stejně chutné a kvalitní produkty.</p>
                         <strong class="last">Těšíme se na vaši návštěvu!</strong>
                     </figcaption>
-                    <img class="inline image" src="img/fornetti-minit-cola.png" srcset="img/fornetti-minit-cola.png 1x, img/hd/fornetti-minit-cola.png 2x" alt="Fornetti Minit Cola" width="230" height="300"/>
+                    <img class="inline image" src="img/fornetti-minit-new-store.jpg" srcset="img/fornetti-minit-new-store.jpg 1x, img/hd/fornetti-minit-new-store.jpg 2x, img/hq/fornetti-minit-new-store.jpg 3x" alt="Fornetti Minit nova prodejna" width="476" height="323" />
                 </figure>
             </div>
         </li>
