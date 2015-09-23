@@ -6,7 +6,7 @@
             'name' => 'minitbohemia.cz',
             'mail' =>'dev@brainsum.com'
         ),
-        'send' => 'aszekely@brainsum.com'//'fornetti@fornetti.cz'
+        'send' => 'pkovacs@brainsum.com'//'fornetti@fornetti.cz'
     ),
 
     'home' => '/o-nas',
