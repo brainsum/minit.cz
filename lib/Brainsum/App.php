@@ -171,7 +171,7 @@ class App
             throw new \Exception("Invalid CSRF token");
         }
         foreach ($post as $key => & $value) {
-            if ($key !== 'cooperation' && true === empty($value)) {
+            if ($key !== 'message' && true === empty($value)) {
                 return false;
             }
         }
