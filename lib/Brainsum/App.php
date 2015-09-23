@@ -154,6 +154,7 @@ class App
         }
         $mail->addAddress($target);
         $mail->msgHTML($html);
+        $mail->CharSet = 'UTF-8';
         $mail->Subject = '[FORM.Submit] Minit Bohemia (Pro partnery)';
         $mail->AltBody = strip_tags(str_replace('<br/>', "\r\n", $html));
 
@@ -171,9 +172,7 @@ class App
             throw new \Exception("Invalid CSRF token");
         }
         foreach ($post as $key => & $value) {
-            if ($key !== 'message' && true === empty($value)) {
-                return false;
-            }
+            if ($key !== 'message' && true === empty($value)) return false;
         }
         $captcha = new ReCaptcha(self::$_config->get('google.recaptcha.private'));
 
