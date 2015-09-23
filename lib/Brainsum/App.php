@@ -157,7 +157,13 @@ class App
         $mail->Subject = '[FORM.Submit] Minit Bohemia (Pro partnery)';
         $mail->AltBody = strip_tags(str_replace('<br/>', "\r\n", $html));
 
-        $mail->send();
+        if ($mail->send() === false) {
+            file_put_contents('error.log', sprintf('[%s] | %s | %s',
+                date('Y-m-d H:i:s'),
+                $mail->ErrorInfo,
+                json_encode($data)
+            ), FILE_APPEND);
+        }
     }
 
     public static function validate($post) {
