@@ -6,10 +6,7 @@
             'name' => 'minitbohemia.cz',
             'mail' =>'dev@brainsum.com'
         ),
-        'send' => array(
-            'name' => 'Fornetti Bohemia',
-            'mail' => 'aszekely@brainsum.com'//'fornetti@fornetti.cz'
-        )
+        'send' => 'aszekely@brainsum.com'//'fornetti@fornetti.cz'
     ),
 
     'home' => '/o-nas',

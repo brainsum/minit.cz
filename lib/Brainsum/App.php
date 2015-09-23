@@ -33,7 +33,7 @@ class App
 
                 if (empty($_POST) === false && ($form = self::validate($_POST)) !== false) {
                     $href = $_SESSION['page'];
-                    self::send(self::$_config->get('mail.send.name'), (array) $form);
+                    self::send(self::$_config->get('mail.send'), (array) $form);
                 }
                 self::redirect($href);
             }
@@ -158,7 +158,7 @@ class App
         $mail->AltBody = strip_tags(str_replace('<br/>', "\r\n", $html));
 
         if ($mail->send() === false) {
-            file_put_contents('error.log', sprintf('[%s] | %s | %s',
+            file_put_contents('log/error.log', sprintf('[%s] | %s | %s',
                 date('Y-m-d H:i:s'),
                 $mail->ErrorInfo,
                 json_encode($data)
