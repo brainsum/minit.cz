@@ -33,7 +33,7 @@ class App
 
                 if (empty($_POST) === false && ($form = self::validate($_POST)) !== false) {
                     $href = $_SESSION['page'];
-                    self::send(self::$_config->get('mail.send'), (array) $form);
+                    self::send(self::$_config->get('mail.send.name'), (array) $form);
                 }
                 self::redirect($href);
             }
@@ -111,8 +111,7 @@ class App
         ob_start();
         include("view/{$path}.html.php");
 
-        $html = ob_get_clean();
-        $html = preg_replace(array('/(\r|\n|\t|\s{2})/', '/<!--[^\[](.|\s)*?-->/'), '', $html);
+        $html = self::shrink(ob_get_clean());
 
         if ($sign === true) {
             $html.= "\r\n\r\n<!-- ".implode(" -->\r\n<!-- ", self::$_config->get('sign', (array) date('Y')))." -->";
@@ -120,41 +119,55 @@ class App
         return $html;
     }
 
+    protected static function shrink($html) {
+        return preg_replace(array('/(\\r|\\n|\\t|\\s{2})+/', '/<!--[^\[].*?-->/'), '', (string) $html);
+    }
+
     public static function send($target, array $data) {
         include 'lib/PhpMailer/PHPMailerAutoload.php';
-        $html = '';
 
+        $html = '';
+        $send = false;
+
+        if (isset($data['email']) === true) {
+            $send = filter_var($data['email'], FILTER_VALIDATE_EMAIL);
+        }
         foreach ($data as $key => $value) {
             if ($key === 'g-recaptcha-response' || $key === 'token') {
                 continue;
             }
-            $html.= sprintf('<strong>%s:</strong> <span>%s</span><br />', $key, $value);
+            $html.= sprintf('<strong>%s:</strong> <span>%s</span><br />',
+                htmlspecialchars($key),
+                htmlspecialchars($value)
+            );
         }
-        $html.= "<br/><br/><small>This is an auto-generated message, please do not answer!</small>";
-
+        $html.= sprintf("<br/><br/><small>%s</small>",
+            $send === false ? "This is an auto-generated message, please do not answer!" : "You can reply to this email (which will be sent to the given email address)."
+        );
         $mail = new \PHPMailer();
-        $mail->setFrom(self::$_config->get('mail.from', 'dev@brainsum.com'));
+        $mail->setFrom(
+            self::$_config->get('mail.from.mail', 'dev@brainsum.com'),
+            self::$_config->get('mail.from.name')
+        );
+        if ($send !== false) {
+            $mail->addReplyTo($send, (string) $data['name']);
+        }
         $mail->addAddress($target);
         $mail->msgHTML($html);
-        $mail->Subject = '[FORM.Submit] Fornetti Minit';
+        $mail->Subject = '[FORM.Submit] Minit Bohemia (Pro partnery)';
         $mail->AltBody = strip_tags(str_replace('<br/>', "\r\n", $html));
+
         $mail->send();
     }
 
     public static function validate($post) {
-        static $_allow;
-
-        if ($_allow === null) {
-            $_allow = array('message', 'cooperation');
-        }
-        foreach ($post as $key => & $value) {
-            if (empty($value) === true && in_array($key, $_allow) === false) {
-                return false;
-            }
-            $value = htmlspecialchars(strip_tags($value));
-        }
         if ($post['token'] !== self::getToken()) {
             throw new \Exception("Invalid CSRF token");
+        }
+        foreach ($post as $key => & $value) {
+            if ($key !== 'cooperation' && true === empty($value)) {
+                return false;
+            }
         }
         $captcha = new ReCaptcha(self::$_config->get('google.recaptcha'));
 

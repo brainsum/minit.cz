@@ -2,8 +2,14 @@
     'lang' => 'cs',
     'sign' => array('DEVELOPED BY BRAINSUM', 2015),
     'mail' => array(
-        'from' => 'dev@brainsum.com',
-        'send' => 'fornetti@fornetti.cz'
+        'from' => array(
+            'name' => 'minitbohemia.cz',
+            'mail' =>'dev@brainsum.com'
+        ),
+        'send' => array(
+            'name' => 'Fornetti Bohemia',
+            'mail' => 'fornetti@fornetti.cz'
+        )
     ),
 
     'home' => '/o-nas',

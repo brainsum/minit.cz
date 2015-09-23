@@ -1,6 +1,6 @@
 <!-- [MAIN.NODE-FORM] -->
 
-<section class="">
+<section class="region">
 <div class="block block-lead content">
     <div class="container">
         <h2 class="title">Získat více informací</h2>
