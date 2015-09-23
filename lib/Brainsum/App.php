@@ -169,7 +169,7 @@ class App
                 return false;
             }
         }
-        $captcha = new ReCaptcha(self::$_config->get('google.recaptcha'));
+        $captcha = new ReCaptcha(self::$_config->get('google.recaptcha.private'));
 
         if ($captcha->verify($post['g-recaptcha-response'], $_SERVER['REMOTE_ADDR'])->isSuccess() === false) {
             throw new \Exception("Invalid reCAPTCHA code");

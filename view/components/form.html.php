@@ -28,7 +28,7 @@
                 <textarea class="input" name="cooperation" id="info-cooperation"></textarea>
             </div>
             <div class="item item-expand required">
-                <div class="g-recaptcha" data-sitekey="6LeC-AwTAAAAAIKFmpvgZSlM4Oqv5f0xHcp54mJ9"></div>
+                <div class="g-recaptcha" data-sitekey="<?= Brainsum\App::getConfig()->get('google.recaptcha.public') ?>"></div>
             </div>
 
             <input class="btn" type="submit" value="Odeslat"/>

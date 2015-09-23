@@ -8,7 +8,7 @@
         ),
         'send' => array(
             'name' => 'Fornetti Bohemia',
-            'mail' => 'fornetti@fornetti.cz'
+            'mail' => 'aszekely@brainsum.com'//'fornetti@fornetti.cz'
         )
     ),
 
@@ -41,6 +41,9 @@
             'zoom'  => 11
         ),
         'analytics' => 'UA-9977596-1',
-        'recaptcha' => '6LeC-AwTAAAAAJTWk97C6XImTwgRer4_075J15KC'
+        'recaptcha' => array(
+            'private'   => '6LeC-AwTAAAAAJTWk97C6XImTwgRer4_075J15KC',
+            'public'    => '6LeC-AwTAAAAAIKFmpvgZSlM4Oqv5f0xHcp54mJ9'
+        )
     )
 );
