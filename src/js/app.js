@@ -11,8 +11,6 @@
     // Automatically switches between the slider steps
 
     if (_s.length !== 0) {
-        window.test = [];
-
         var Event = function (node, type, listener) {
             node.addEventListener(type, listener);
         };
@@ -66,7 +64,7 @@
         };
 
         for (var i = 0, l = _s.length; i < l; i ++) {
-            window.test.push(_s[i].slider = new Slider(_s[i], slide));
+            _s[i].slider = new Slider(_s[i], slide);
         }
     }
 
