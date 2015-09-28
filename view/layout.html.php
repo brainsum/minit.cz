@@ -122,7 +122,7 @@ $path = Brainsum\App::getRouter()->getPath();
 
 <!-- [MAIN] SCRIPTS -->
 
-<script src="https://www.google.com/recaptcha/api.js" defer="defer" async="async"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=cs" defer="defer" async="async"></script>
 
 <?php if ($path === 'kontakty') : ?>
     <script src="https://maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init"></script>
