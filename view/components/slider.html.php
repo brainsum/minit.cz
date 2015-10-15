@@ -40,12 +40,12 @@
         </li>
         <li class="inline-container view item">
             <div class="inline">
-                <h3 class="title">Odteď bude špenát chutnat každému!</h3>
+                <h3 class="title">Vychutnejte si novinku – makové Rollo</h3>
                 <figure class="inline-container container">
-                    <img class="inline image" src="img/fornetti-minit-spenat.png" srcset="img/fornetti-minit-spenat.png 1x, img/hd/fornetti-minit-spenat.png 2x" alt="Fornetti Minit Špenát" width="251" height="300" />
+                    <img class="inline image" src="img/fornetti-minit-croissant-poppy-seed.png" srcset="img/fornetti-minit-croissant-poppy-seed.png 1x, img/hd/fornetti-minit-croissant-poppy-seed.png 2x" alt="Fornetti Minit Croissant Poppy Seed" width="251" height="300" />
                     <figcaption class="inline xs-6 text">
-                        <p>Novinka, které je souzeno, aby nám všem chutnala. Lahodnou chuť špenátové náplně podtrhuje sýr niva a povrch je posypaný zlatým a křupavým sýrem.</p>
-                        <strong class="last">Od teď je špenát nejen zdravý, ale také chutný!</strong>
+                        <p>Mák patří k naší zemi stejně jako špagety k Itálii. Vaše velká poptávka po makových produktech nám vnukla skvělý nápad. Stávajícímu skořicovému Rollu tak přibyl makový bratr!</p>
+                        <strong class="last">Vychutnat si ho můžete již teď na všech prodejnách.</strong>
                     </figcaption>
                 </figure>
             </div>
