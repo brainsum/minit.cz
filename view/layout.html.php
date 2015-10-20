@@ -81,7 +81,7 @@ $path = Brainsum\App::getRouter()->getPath();
 
 <footer id="footer" class="block">
     <ul class="inline-block container">
-        <li class="inline col xs-3">
+        <li class="inline col xs-2">
             <h6 class="title">O nás</h6>
             <ul class="list">
                 <li class="item"><a class="link" href="/o-nas#novinky">Novinky</a></li>
@@ -89,7 +89,7 @@ $path = Brainsum\App::getRouter()->getPath();
                 <li class="item"><a class="link" href="/o-nas#filozofie">Filozofie</a></li>
             </ul>
         </li>
-        <li class="inline col xs-3">
+        <li class="inline col xs-2">
             <h6 class="title">Pro partnery</h6>
             <ul class="list">
                 <li class="item"><a class="link" href="/pro-partnery#vyhody-spoluprace">Výhody spolupráce</a></li>
@@ -101,6 +101,13 @@ $path = Brainsum\App::getRouter()->getPath();
             <h6 class="title">Online komunita</h6>
             <ul class="list">
                 <li class="item"><a class="link" href="//www.facebook.com/minitkacz" target="_blank">Facebook</a></li>
+            </ul>
+        </li>
+        <li class="inline col xs-2">
+            <h6 class="title">Ke stažení</h6>
+            <ul class="list">
+                <li class="item"><a class="link" href="other_files/seznam_alergenu.pdf">Seznam alergenů</a></li>
+                <li class="item"><a class="link" href="other_files/slozeni_vyrobku.pdf">Složení produktů</a></li>
             </ul>
         </li>
         <li class="inline col xs-3">
