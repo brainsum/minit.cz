@@ -23,7 +23,7 @@
         ),
         'pro-partnery' => array(
             'title' => 'Pro partnery',
-            'block' => array('splash', 'cooperation', 'franchise', 'certifications', 'short-history', 'form', 'faq')
+            'block' => array('splash', 'video', 'cooperation', 'franchise', 'certifications', 'short-history', 'form', 'faq')
         ),
         'kontakty' => array(
             'title' => 'Kontakty',
