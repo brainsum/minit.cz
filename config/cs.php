@@ -19,11 +19,11 @@
     'path' => array(
         'o-nas' => array(
             'title' => 'O nás',
-            'block' => array('splash', 'slider', 'what-we-have', 'our-history', 'philosophy', 'convergence')
+            'block' => array('splash', 'slider', 'what-we-have', 'video', 'our-history', 'philosophy', 'convergence')
         ),
         'pro-partnery' => array(
             'title' => 'Pro partnery',
-            'block' => array('splash', 'video', 'cooperation', 'franchise', 'certifications', 'short-history', 'form', 'faq')
+            'block' => array('splash', 'gallery', 'cooperation', 'franchise', 'certifications', 'short-history', 'form', 'faq')
         ),
         'kontakty' => array(
             'title' => 'Kontakty',

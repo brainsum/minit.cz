@@ -34,6 +34,8 @@ $path = Brainsum\App::getRouter()->getPath();
     <link type="text/css" rel="stylesheet" href="<?= Brainsum\App::getAssetUrl('css/xs.css') ?>" media="all"/>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
 
+    <link rel="stylesheet" href="css/lightbox.css">
+
     <!--[if (IE 10)&(IEMobile)]><style>@-ms-viewport{width:auto!important}</style><![endif]-->
 </head>
 
@@ -106,8 +108,8 @@ $path = Brainsum\App::getRouter()->getPath();
         <li class="inline col xs-2">
             <h6 class="title">Ke stažení</h6>
             <ul class="list">
-                <li class="item"><a class="link" href="other_files/seznam_alergenu.pdf">Seznam alergenů</a></li>
-                <li class="item"><a class="link" href="other_files/slozeni_vyrobku.pdf">Složení produktů</a></li>
+                <li class="item"><a target="_blank" class="link" href="other_files/seznam_alergenu.pdf">Seznam alergenů</a></li>
+                <li class="item"><a target="_blank" class="link" href="other_files/slozeni_vyrobku.pdf">Složení produktů</a></li>
             </ul>
         </li>
         <li class="inline col xs-3">

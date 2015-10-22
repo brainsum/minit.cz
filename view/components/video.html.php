@@ -1,7 +1,7 @@
 <!-- [MAIN.NODE-TEXT] CONTENT -->
 
 <section class="region" id="video">
-    <div class="block block-fade content">
+    <div class="block block-lead content">
         <div class="container">
             <video width="100%" controls>
               <source src="other_files/fornetti_17new.mp4" type="video/mp4">
