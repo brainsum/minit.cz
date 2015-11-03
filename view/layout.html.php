@@ -138,5 +138,6 @@ $path = Brainsum\App::getRouter()->getPath();
 <?php endif ?>
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
+<script src="js/products-page-menu.js"></script>
 </body>
 </html>

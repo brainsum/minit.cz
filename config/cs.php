@@ -21,6 +21,10 @@
             'title' => 'O nás',
             'block' => array('splash', 'slider', 'what-we-have', 'video', 'our-history', 'philosophy', 'convergence')
         ),
+        'produkty' => array(
+            'title' => 'Produkty',
+            'block' => array('products-categories', 'mini-products', 'pizza', 'xxl-products')
+        ),
         'pro-partnery' => array(
             'title' => 'Pro partnery',
             'block' => array('splash', 'gallery', 'cooperation', 'franchise', 'certifications', 'short-history', 'form', 'faq')
