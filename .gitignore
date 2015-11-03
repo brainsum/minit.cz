@@ -5,4 +5,9 @@ node_modules
 *.sublime-projectcompletions
 *.sublime-workspace
 Drupal.sublime-projectcompletions
+<<<<<<< HEAD
 stats
+=======
+assets/other_files/fornetti_17new.mp4
+assets/other_files/fornetti_17new.ogg
+>>>>>>> b7ffd8a19e26b90ff846e66de9d173dbaf538543
