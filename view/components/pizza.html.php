@@ -5,8 +5,8 @@
         <div class="container center">
             <h1 class="title">Pizza</h1>
             <ul>
-                <li class="inline xs-4 relative">
-                    <div class="info-box wide-info-box">
+                <li class="inline xs-4 relative product-element">
+                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -43,8 +43,8 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="inline xs-4 relative">
-                    <div class="info-box wide-info-box">
+                <li class="inline xs-4 relative product-element">
+                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -81,8 +81,8 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="inline xs-4 relative">
-                    <div class="info-box wide-info-box">
+                <li class="inline xs-4 relative product-element">
+                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -135,8 +135,8 @@
         <!-- TODO képek kivágása! -->
         <div class="container">
             <h1 class="title">Kolač</h1>
-            <ul class="inline-container container">
-                <li class="inline xs-3 center relative">
+            <ul class="inline-container container product-lister product-element">
+                <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -165,8 +165,8 @@
                             Fornetti koláč makový
                         </figcaption>
                     </figure>
-                </li>
-                <li class="inline xs-3 center relative">
+                </l product-elementi>
+                <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -202,8 +202,8 @@
         <!-- under the line: Štrůdl -->
         <div class="container">
             <h1 class="title">Štrůdl</h1>
-            <ul class="inline-container container">
-                <li class="inline xs-3 center relative">
+            <ul class="inline-container container product-lister product-element">
+                <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -232,8 +232,8 @@
                             Štrůdl jablkovo&#8209;makový
                         </figcaption>
                     </figure>
-                </li>
-                <li class="inline xs-3 center relative">
+                </l product-elementi>
+                <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -262,8 +262,8 @@
                             Štrůdl tvarohový
                         </figcaption>
                     </figure>
-                </li>
-                <li class="inline xs-3 center relative">
+                </l product-elementi>
+                <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -314,8 +314,8 @@
                             Štrůdl jablkovo&#8209;ořechový
                         </figcaption>
                     </figure>
-                </li>
-                <li class="inline xs-3 center relative">
+                </l product-elementi>
+                <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">

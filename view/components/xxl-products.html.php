@@ -6,7 +6,7 @@
         	<h1 class="title">XXL výrobky</h1>
         	<!-- First row -->
             <p>
-	            <ul class="inline-container container">
+	            <ul class="inline-container container product-lister">
 	                <li class="inline xs-4 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
@@ -125,7 +125,7 @@
             </p>
         	<!-- Second row -->
             <p>
-	            <ul class="inline-container container">
+	            <ul class="inline-container container product-lister">
 	                <li class="inline xs-4 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
@@ -206,7 +206,7 @@
             </p>
         	<!-- Third row -->
             <p>
-	            <ul class="inline-container container">
+	            <ul class="inline-container container product-lister">
 	                <li class="inline xs-4 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
@@ -325,7 +325,7 @@
             </p>
         	<!-- Second row -->
             <p>
-	            <ul class="inline-container container">
+	            <ul class="inline-container container product-lister">
 	                <li class="inline xs-4 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
