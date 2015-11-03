@@ -34,6 +34,8 @@ $path = Brainsum\App::getRouter()->getPath();
     <link type="text/css" rel="stylesheet" href="<?= Brainsum\App::getAssetUrl('css/xs.css') ?>" media="all"/>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
 
+    <link rel="stylesheet" href="css/lightbox.css">
+
     <!--[if (IE 10)&(IEMobile)]><style>@-ms-viewport{width:auto!important}</style><![endif]-->
 </head>
 
@@ -81,7 +83,7 @@ $path = Brainsum\App::getRouter()->getPath();
 
 <footer id="footer" class="block">
     <ul class="inline-block container">
-        <li class="inline col xs-3">
+        <li class="inline col xs-2">
             <h6 class="title">O nás</h6>
             <ul class="list">
                 <li class="item"><a class="link" href="/o-nas#novinky">Novinky</a></li>
@@ -89,7 +91,7 @@ $path = Brainsum\App::getRouter()->getPath();
                 <li class="item"><a class="link" href="/o-nas#filozofie">Filozofie</a></li>
             </ul>
         </li>
-        <li class="inline col xs-3">
+        <li class="inline col xs-2">
             <h6 class="title">Pro partnery</h6>
             <ul class="list">
                 <li class="item"><a class="link" href="/pro-partnery#vyhody-spoluprace">Výhody spolupráce</a></li>
@@ -101,6 +103,13 @@ $path = Brainsum\App::getRouter()->getPath();
             <h6 class="title">Online komunita</h6>
             <ul class="list">
                 <li class="item"><a class="link" href="//www.facebook.com/minitkacz" target="_blank">Facebook</a></li>
+            </ul>
+        </li>
+        <li class="inline col xs-2">
+            <h6 class="title">Ke stažení</h6>
+            <ul class="list">
+                <li class="item"><a target="_blank" class="link" href="other_files/seznam_alergenu.pdf">Seznam alergenů</a></li>
+                <li class="item"><a target="_blank" class="link" href="other_files/slozeni_vyrobku.pdf">Složení produktů</a></li>
             </ul>
         </li>
         <li class="inline col xs-3">
@@ -129,5 +138,6 @@ $path = Brainsum\App::getRouter()->getPath();
 <?php endif ?>
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
+<script src="js/products-page-menu.js"></script>
 </body>
 </html>

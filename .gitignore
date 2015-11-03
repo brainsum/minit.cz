@@ -5,3 +5,4 @@ node_modules
 *.sublime-projectcompletions
 *.sublime-workspace
 Drupal.sublime-projectcompletions
+stats
