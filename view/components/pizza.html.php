@@ -309,7 +309,7 @@
                             </div>
                         </div>
                     </div>
-                        <img src="img/products/strudl-jablkovo-makovy.png">
+                        <img src="img/products/strudl-jablkovo-orechovy.png">
                         <figcaption class="caption medium-font">
                             Štrůdl jablkovo&#8209;ořechový
                         </figcaption>

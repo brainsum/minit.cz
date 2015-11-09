@@ -7,7 +7,7 @@
         	<!-- First row -->
             <p>
 	            <ul class="inline-container container product-lister">
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -45,7 +45,7 @@
 	                        </figcaption>
 	                    </figure>
 	                </li>
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -83,7 +83,7 @@
 	                        </figcaption>
 	                    </figure>
 	                </li>
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -121,12 +121,7 @@
 	                        </figcaption>
 	                    </figure>
 	                </li>
-	            </ul>
-            </p>
-        	<!-- Second row -->
-            <p>
-	            <ul class="inline-container container product-lister">
-	                <li class="inline xs-4 relative">
+                    <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -157,14 +152,20 @@
                             </div>
                         </div>
                     </div>
-	                    <figure class="image-element">
-	                        <img src="img/products/xxl-syrove.png">
-	                        <figcaption class="caption medium-font">
-	                            XXL sýrové
-	                        </figcaption>
-	                    </figure>
-	                </li>
-	                <li class="inline xs-4 relative">
+                        <figure class="image-element">
+                            <img src="img/products/xxl-syrove.png">
+                            <figcaption class="caption medium-font">
+                                XXL sýrové
+                            </figcaption>
+                        </figure>
+                    </li>
+	            </ul>
+            </p>
+        	<!-- Second row -->
+            <p>
+	            <ul class="inline-container container product-lister">
+	                
+	                <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -202,12 +203,7 @@
 	                        </figcaption>
 	                    </figure>
 	                </li>
-	            </ul>
-            </p>
-        	<!-- Third row -->
-            <p>
-	            <ul class="inline-container container product-lister">
-	                <li class="inline xs-4 relative">
+                    <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -238,14 +234,14 @@
                             </div>
                         </div>
                     </div>
-	                    <figure class="image-element">
-	                        <img src="img/products/xxl-duo-jahoda-puding.png">
-	                        <figcaption class="caption medium-font">
-	                            XXL Duo jahoda-puding
-	                        </figcaption>
-	                    </figure>
-	                </li>
-	                <li class="inline xs-4 relative">
+                        <figure class="image-element">
+                            <img src="img/products/xxl-duo-jahoda-puding.png">
+                            <figcaption class="caption medium-font">
+                                XXL Duo jahoda-puding
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -276,14 +272,14 @@
                             </div>
                         </div>
                     </div>
-	                    <figure class="image-element">
-	                        <img src="img/products/xxl-duo-boruvka-jogurt.png">
-	                        <figcaption class="caption medium-font">
-	                            XXL Duo borůvka-jogurt
-	                        </figcaption>
-	                    </figure>
-	                </li>
-	                <li class="inline xs-4 relative">
+                        <figure class="image-element">
+                            <img src="img/products/xxl-duo-boruvka-jogurt.png">
+                            <figcaption class="caption medium-font">
+                                XXL Duo borůvka-jogurt
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -314,19 +310,19 @@
                             </div>
                         </div>
                     </div>
-	                    <figure class="image-element">
-	                        <img src="img/products/pletenec-s-javorovym-sirupem.png">
-	                        <figcaption class="caption medium-font">
-	                            Pletenec s javorovým sirupem
-	                        </figcaption>
-	                    </figure>
-	                </li>
+                        <figure class="image-element">
+                            <img src="img/products/pletenec-s-javorovym-sirupem.png">
+                            <figcaption class="caption medium-font">
+                                Pletenec s javorovým sirupem
+                            </figcaption>
+                        </figure>
+                    </li>
 	            </ul>
             </p>
         	<!-- Second row -->
             <p>
 	            <ul class="inline-container container product-lister">
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -364,7 +360,7 @@
 	                        </figcaption>
 	                    </figure>
 	                </li>
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box wide-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
