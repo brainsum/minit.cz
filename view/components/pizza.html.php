@@ -200,7 +200,7 @@
         </div>
 
         <!-- under the line: Štrůdl -->
-        <div class="container">
+        <div class="container margin-top">
             <h1 class="title">Štrůdl</h1>
             <ul class="inline-container container product-lister product-element">
                 <li class="inline xs-3 center relative product-element">

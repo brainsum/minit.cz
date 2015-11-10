@@ -8,7 +8,7 @@
             <p>
 	            <ul class="inline-container container product-lister">
 	                <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -46,7 +46,7 @@
 	                    </figure>
 	                </li>
 	                <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -84,7 +84,7 @@
 	                    </figure>
 	                </li>
 	                <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -122,7 +122,7 @@
 	                    </figure>
 	                </li>
                     <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -166,7 +166,7 @@
 	            <ul class="inline-container container product-lister">
 	                
 	                <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -204,7 +204,7 @@
 	                    </figure>
 	                </li>
                     <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -242,7 +242,7 @@
                         </figure>
                     </li>
                     <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -280,7 +280,7 @@
                         </figure>
                     </li>
                     <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -323,7 +323,7 @@
             <p>
 	            <ul class="inline-container container product-lister">
 	                <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">
@@ -361,7 +361,7 @@
 	                    </figure>
 	                </li>
 	                <li class="inline xs-3 relative">
-                    <div class="info-box wide-info-box">
+                    <div class="info-box wide-info-box bottom">
                         <div class="info-box-top">
                             <div class="info-box-cell">
                                 <object data="img/products/icon-1-kus.svg" type="image/svg+xml" width="23px" height="23px">

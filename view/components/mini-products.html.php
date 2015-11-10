@@ -286,7 +286,7 @@
         	<!-- Last row -->
             <p>
 	            <ul class="inline-container container product-lister">
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box small-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -308,7 +308,7 @@
 	                        </figcaption>
 	                    </figure>
 	                </li>
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box small-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
@@ -330,7 +330,7 @@
 	                        </figcaption>
 	                    </figure>
 	                </li>
-	                <li class="inline xs-4 relative">
+	                <li class="inline xs-3 relative">
                     <div class="info-box small-info-box">
                         <div class="info-box-top">
                             <div class="info-box-cell">
