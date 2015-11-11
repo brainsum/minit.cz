@@ -14,6 +14,9 @@ function hide(element) {
 var menus = document.querySelectorAll('.product-category-menu');
 var pageVisibleIndex = 0;
 
+//first menu is white
+menus[0].querySelector('svg').style.fill = '#fff';	
+
 for (var i = 0; i<menus.length; i++) {
 	menus[i].addEventListener("click", function(){
 		//product-menu-2
@@ -35,7 +38,7 @@ for (var i = 0; i<menus.length; i++) {
 				if (j != id) {
 					menus[j].querySelector('svg').style.fill = '#000';	
 					//'transition: fill .2s ease-out;'
-					menus[j].querySelector('svg').style.transition = 'fill .2s ease-out';
+					//menus[j].querySelector('svg').style.transition = 'fill .2s ease-out';
 				}
 			}
 			//make the chosen one white
