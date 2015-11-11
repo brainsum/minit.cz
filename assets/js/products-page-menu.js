@@ -36,9 +36,7 @@ for (var i = 0; i<menus.length; i++) {
 			//make all svgs black
 			for (var j = 0; j<menus.length; j++) {
 				if (j != id) {
-					menus[j].querySelector('svg').style.fill = '#000';	
-					//'transition: fill .2s ease-out;'
-					//menus[j].querySelector('svg').style.transition = 'fill .2s ease-out';
+					menus[j].querySelector('svg').style.fill = '#000';
 				}
 			}
 			//make the chosen one white
