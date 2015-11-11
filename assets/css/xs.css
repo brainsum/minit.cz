@@ -70,7 +70,7 @@ pre,textarea{overflow:auto}body,figure,html,ol,ul{margin:0}article,aside,details
 	cursor: pointer;
 }
 .product-category-menu:hover svg {
-    fill: #fff;
+    fill: #fff !important;
 }
 
 /*FIXME TODO KI KELL TÖRÖLTNI!

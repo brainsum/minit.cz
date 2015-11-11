@@ -18,7 +18,7 @@ for (var i = 0; i<menus.length; i++) {
 	menus[i].addEventListener("click", function(){
 		//product-menu-2
 		var id = parseInt(this.id.split('-')[2]);
-		console.log(id);
+		//console.log(id);
 		if(pageVisibleIndex != id) {
 			var blockVisible = getBlockElement(pageVisibleIndex);
 			var blockToShow = getBlockElement(id);
@@ -26,6 +26,20 @@ for (var i = 0; i<menus.length; i++) {
 			hide(blockVisible);
 			show(blockToShow);
 			pageVisibleIndex = id;
+
+
+
+			//svg make white
+			//make all svgs black
+			for (var j = 0; j<menus.length; j++) {
+				if (j != id) {
+					menus[j].querySelector('svg').style.fill = '#000';	
+					//'transition: fill .2s ease-out;'
+					menus[j].querySelector('svg').style.transition = 'fill .2s ease-out';
+				}
+			}
+			//make the chosen one white
+			this.querySelector('svg').style.fill = '#fff';
 		}
 	});
 }
