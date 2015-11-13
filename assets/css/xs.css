@@ -3,7 +3,7 @@ pre,textarea{overflow:auto}body,figure,html,ol,ul{margin:0}article,aside,details
 
 .info-box{
 	position:absolute;
-	top:0;
+	top:120px;
 	right:0;
 	background: #DE7700;
 	display:inline;
