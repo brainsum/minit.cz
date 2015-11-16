@@ -110,7 +110,7 @@
                                 25 ks
                             </div>
                             <div class="info-box-cell">
-                                110 g
+                                100 g
                             </div>
                         </div>
                     </div>

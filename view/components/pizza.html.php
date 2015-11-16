@@ -252,7 +252,7 @@
                                 10 ks
                             </div>
                             <div class="info-box-cell">
-                                120 g
+                                100 g
                             </div>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                                 10 ks
                             </div>
                             <div class="info-box-cell">
-                                120 g
+                                100 g
                             </div>
                         </div>
                     </div>
@@ -334,7 +334,7 @@
                                 48 ks
                             </div>
                             <div class="info-box-cell">
-                                140 g
+                                100 g
                             </div>
                         </div>
                     </div>
