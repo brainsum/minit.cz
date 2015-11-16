@@ -73,12 +73,6 @@ pre,textarea{overflow:auto}body,figure,html,ol,ul{margin:0}article,aside,details
     fill: #fff !important;
 }
 
-/*FIXME TODO KI KELL TÖRÖLTNI!
- KISZEDI A PRODUKTS MENÜT*/
-#menu > li:nth-child(2){
-	display: none;
-}
-
 .inline-container .btn, .inline-container .inline, .inline-container .inline-container {
 	text-align: center;
 }
