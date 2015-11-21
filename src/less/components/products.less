@@ -1,0 +1,145 @@
+@import (reference) "../lib/config.less";
+
+/**
+ *
+ * @author Bence Szabó <bszabo@brainsum.com>
+ * @author Krisztian Pinter <kpinter@brainsum.com>
+ *
+ */
+
+.layout-xs() {
+
+  .page-produkty {
+
+    .gallery-image-container {
+      padding: 1px;
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+    .orange {
+      background-color: #DE7700;
+      background-image: none;
+    }
+    .white-text {
+      color: white;
+    }
+    .medium-font {
+      font-size: 20px;
+    }
+    .hide {
+      display: none;
+    }
+
+    .relative{
+      position: relative;
+    }
+
+    .bottom {
+      top: 120px;
+    }
+
+    .margin-top {
+      margin-top: 35px;
+    }
+
+    .row {
+      display: block;
+      margin: 0 0 4em;
+
+      &.first {
+        margin: 2em 0 4em;
+      }
+
+    }
+
+    .info-box{
+      position:absolute;
+      top:120px;
+      right:0;
+      background: #DE7700;
+      display:inline;
+      border-radius:30px;
+      text-align: center;
+    }
+
+    .wide-info-box{
+      width:110px;
+    }
+    .info-box-top{
+      padding-top:5px;
+      height:30px;
+    }
+
+    .info-box-cell {
+      width:28%;
+      padding-left: 3px;
+      padding-right: 3px;
+      display:inline-block;
+    }
+
+    .info-box-bottom {
+      border-top:1px solid white;
+      color:white;
+      font-size:8px;
+      height: 20px;
+
+      .info-box-cell {
+        position: relative;
+        line-height: 10px;
+        top: -5px;
+      }
+
+    } //.info-box-bottom
+
+    .medium-info-box {
+      width: 80px;
+
+      .info-box-cell {
+        width: 48%;
+      }
+
+    } //.medium-info-box
+
+    .small-info-box {
+      text-align: center;
+      border-radius: 50%;
+      width: 51px;
+      height: 51px;
+
+      .info-box-cell{
+        width: 96%;
+      }
+
+    } //.small-info-box
+
+    .svg-menu-item {
+      pointer-events: none;
+      fill: #000;
+      transition: fill .2s ease-out;
+      width: 40%;
+      height: 40%;
+    }
+    .product-category-menu {
+      cursor: pointer;
+    }
+    .product-category-menu:hover svg {
+      fill: #fff !important;
+    }
+
+    .inline-container {
+
+      .btn,
+      .inline,
+      .inline-container {
+        text-align: center;
+      }
+
+    } //.inline-container
+
+    .product-lister .inline {
+      vertical-align: top;
+    }
+
+  } //.page-produkty
+
+} //.layout-xs()
