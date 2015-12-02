@@ -88,3 +88,12 @@ pre,textarea{overflow:auto}body,figure,html,ol,ul{margin:0}article,aside,details
 .margin-top {
 	margin-top: 35px;
 }
+
+#facebook-logo {
+	width: 30px;
+}
+
+.logo-container a{
+	margin-top: -7px;
+	height: 72px;
+}

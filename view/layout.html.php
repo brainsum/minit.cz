@@ -67,6 +67,7 @@ $path = Brainsum\App::getRouter()->getPath();
                         htmlspecialchars($item['name'])
                     ) ?>
                 <?php endforeach ?>
+                <li class="inline item logo-container"><a class="link" href="https://facebook.com/minitkacz" target="_blank"><img src="img/facebook-logo.png" id="facebook-logo"></a></li>
             </ul>
         </nav>
     </div>
