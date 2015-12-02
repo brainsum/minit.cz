@@ -132,7 +132,6 @@
         </table>
 
         <!-- under the line: Kolač -->
-        <!-- TODO képek kivágása! -->
         <div class="container">
             <h1 class="title">Kolač</h1>
             <ul class="inline-container container product-lister product-element">
@@ -165,7 +164,7 @@
                             Fornetti koláč makový
                         </figcaption>
                     </figure>
-                </l product-elementi>
+                </li> <!--product-element-->
                 <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
@@ -232,7 +231,7 @@
                             Štrůdl jablkovo&#8209;makový
                         </figcaption>
                     </figure>
-                </l product-elementi>
+               </li> <!-- product-element -->
                 <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
@@ -262,7 +261,7 @@
                             Štrůdl tvarohový
                         </figcaption>
                     </figure>
-                </l product-elementi>
+                </li> <!-- product-element -->
                 <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
@@ -314,7 +313,7 @@
                             Štrůdl jablkovo&#8209;ořechový
                         </figcaption>
                     </figure>
-                </l product-elementi>
+                </li> <!-- product-element -->
                 <li class="inline xs-3 center relative product-element">
                     <div class="info-box medium-info-box">
                         <div class="info-box-top">
@@ -344,7 +343,7 @@
                             Štrůdl višňovo&#8209;makový
                         </figcaption>
                     </figure>
-                </li>
+                </li> <!-- product-element -->
             </ul>
         </div>
 
