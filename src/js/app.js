@@ -113,6 +113,16 @@
     window._gat === undefined && _n.addEventListener('load', function () {assignPage(window._gat, _i)}, false) || assignPage(window._gat, _i);
     window.minit = {
         init: function () {assignMap('map-js', google.maps)}
-    }
+    };
+
+
+    // [FANCYBOX] auto popup
+
+    $(".fancybox")
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 0
+        });
+    $(".fancybox").eq(0).trigger('click');
 
 })(window, document, 3000);

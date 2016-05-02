@@ -6,7 +6,8 @@ $menu = Brainsum\App::getMenu();
 $name = Brainsum\App::getConfig()->get('page.title');
 $path = Brainsum\App::getRouter()->getPath();
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 
 <html id="root" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?= $page->getLang() ?>" lang="<?= $page->getLang() ?>" prefix="og: http://ogp.me/ns#">
 <head>
@@ -35,6 +36,7 @@ $path = Brainsum\App::getRouter()->getPath();
     <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
 
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 
     <!--[if (IE 10)&(IEMobile)]><style>@-ms-viewport{width:auto!important}</style><![endif]-->
 </head>
@@ -135,10 +137,12 @@ $path = Brainsum\App::getRouter()->getPath();
 <script src="https://www.google.com/recaptcha/api.js?hl=cs" defer="defer" async="async"></script>
 
 <?php if ($path === 'kontakty') : ?>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init"></script>
 <?php endif ?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
 <script src="js/products-page-menu.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 </body>
 </html>
