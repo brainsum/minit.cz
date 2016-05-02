@@ -136,13 +136,15 @@ $path = Brainsum\App::getRouter()->getPath();
 
 <script src="https://www.google.com/recaptcha/api.js?hl=cs" defer="defer" async="async"></script>
 
-<?php if ($path === 'kontakty') : ?>
-    <script src="//maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init"></script>
-<?php endif ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script id="script-ga" src="<?= Brainsum\App::getScheme() === 'https' ? 'https://ssl.' : 'http://www.' ?>google-analytics.com/ga.js" data-id="<?= $page->getAnalyticsCode() ?>" defer="defer"></script>
 <script src="<?= Brainsum\App::getAssetUrl('js/app.js')?>" defer="defer"></script>
-<script src="js/products-page-menu.js"></script>
 <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<?php if ($path === 'kontakty') : ?>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?= $page->getGoogleApiKey() ?>&amp;callback=minit.init" defer async></script>
+<?php endif ?>
+<?php if ($path === 'produkty') : ?>
+    <script src="js/products-page-menu.js"></script>
+<?php endif ?>
 </body>
 </html>
