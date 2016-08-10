@@ -19,7 +19,7 @@
     'path' => array(
         'o-nas' => array(
             'title' => 'O nás',
-            'block' => array('splash', 'slider', 'what-we-have', 'video', 'our-history', 'philosophy', 'convergence')
+            'block' => array('splash', 'slider', 'what-we-have', 'our-history', 'philosophy', 'convergence')
         ),
         'produkty' => array(
             'title' => 'Produkty',

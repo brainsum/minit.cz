@@ -11,4 +11,4 @@
     </div>
 </section>
 
-<a href="img/fornetti-minit-akcie5.jpg" class="fancybox"></a>
+<!--<a href="" class="fancybox"></a>-->
