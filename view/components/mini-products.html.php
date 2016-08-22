@@ -26,7 +26,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/sunkovo-syrove-fornetti-expres.png">
 	                        <figcaption class="caption medium-font">
-	                            Šunkovo-sýrové Fornetti Expres
+	                            Šunkovo-sýrové Minit Expres
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -48,7 +48,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/pizzove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Pizzové Fornetti
+	                            Pizzové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -70,7 +70,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/syrove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Sýrové Fornetti
+	                            Sýrové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -92,7 +92,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/mexicke-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Mexické Fornetti
+	                            Mexické Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -120,7 +120,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/spenatovo-syrove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Špenátovo-sýrové Fornetti
+	                            Špenátovo-sýrové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -142,7 +142,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/merunkove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Meruňkové Fornetti
+	                            Meruňkové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -164,7 +164,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/tvarohove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                             Tvarohové Fornetti
+	                             Tvarohové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -186,7 +186,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/vanilkove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Vanilkové Fornetti
+	                            Vanilkové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -213,7 +213,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/orechove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Ořechové Fornetti
+	                            Ořechové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -235,7 +235,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/cokoladove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Čokoládové Fornetti
+	                            Čokoládové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -257,7 +257,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/malinove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Malinové Fornetti
+	                            Malinové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>
@@ -279,7 +279,7 @@
 	                    <figure class="image-element">
 	                        <img src="img/products/hruskove-fornetti.png">
 	                        <figcaption class="caption medium-font">
-	                            Hruškové Fornetti
+	                            Hruškové Minit
 	                        </figcaption>
 	                    </figure>
 	                </li>

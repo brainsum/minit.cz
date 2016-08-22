@@ -6,7 +6,7 @@
             <li class="inline xs-4" id="address">
                 <h3 class="title">Adresa</h3>
                 <address class="address" property="address" typeof="PostalAddress">
-                    <strong class="row">Fornetti Bohemia, spol. s. r. o.</strong>
+                    <strong class="row">Minit Bohemia s.r.o.</strong>
                     <span class="hidden" property="name">Fornetti</span>
                     <span class="row" property="streetAddress">Holubice 146</span>
                     <span class="row">
@@ -19,7 +19,7 @@
             </li>
             <li class="inline xs-4">
                 <h3 class="title">E-mail</h3>
-                <a href="mailto:fornetti@fornetti.cz" property="email" content="fornetti@fornetti.cz">fornetti@fornetti.cz</a>
+                <a href="mailto:minit@minitbakery.cz" property="email" content="minit@minitbakery.cz">minit@minitbakery.cz</a>
             </li>
             <li class="inline xs-4" id="phone">
                 <h3 class="title">Telefonní čísla</h3>

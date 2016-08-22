@@ -161,7 +161,7 @@
                     <figure class="image-element">
                         <img src="img/products/fornetti-kolac-makovy.png">
                         <figcaption class="caption medium-font">
-                            Fornetti koláč makový
+                            Minit koláč makový
                         </figcaption>
                     </figure>
                 </li> <!--product-element-->
@@ -191,7 +191,7 @@
                     <figure class="image-element">
                         <img src="img/products/fornetti-kolac-tvarohovy.png">
                         <figcaption class="caption medium-font">
-                            Fornetti koláč tvarohový
+                            Minit koláč tvarohový
                         </figcaption>
                     </figure>
                 </li>
