@@ -11,4 +11,4 @@
     </div>
 </section>
 
-<!--<a href="" class="fancybox"></a>-->
+<a href="img/snek_rodinka_kampan.jpg" class="fancybox"></a>
