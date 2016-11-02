@@ -16,6 +16,9 @@
                         <span property="addressRegion">Vyškov</span>
                     </span>
                 </address>
+                <span class="row"><strong>IČO:</strong> 25593676</span>
+                <span class="row"><strong>DIČ:</strong> CZ25593676</span>
+                <span class="row">Zapsáno u obchodního rejstříku vedeného Krajským soudem v Brně oddíl C, vložka 36771.</span>
             </li>
             <li class="inline xs-4">
                 <h3 class="title">E-mail</h3>
