@@ -10,4 +10,4 @@
     </div>
 </section>
 
-<a href="img/minit_christmas_2017.jpg" class="fancybox"></a>
+<!--<a href="" class="fancybox"></a>-->
