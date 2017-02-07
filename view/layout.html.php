@@ -111,8 +111,8 @@ $path = Brainsum\App::getRouter()->getPath();
         <li class="inline col xs-2">
             <h6 class="title">Ke stažení</h6>
             <ul class="list">
-                <li class="item"><a target="_blank" class="link" href="other_files/seznam_alergenu_2016.pdf">Seznam alergenů</a></li>
-                <li class="item"><a target="_blank" class="link" href="other_files/slozeni_vyrobku_2016.pdf">Složení produktů</a></li>
+                <li class="item"><a target="_blank" class="link" href="other_files/seznam_alergenu_2017.pdf">Seznam alergenů</a></li>
+                <li class="item"><a target="_blank" class="link" href="other_files/slozeni_vyrobku_2017.pdf">Složení produktů</a></li>
             </ul>
         </li>
         <li class="inline col xs-3">
