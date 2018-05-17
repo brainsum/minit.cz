@@ -10,4 +10,4 @@
     </div>
 </section>
 
-<!--<a href="" class="fancybox"></a>-->
+<a href="/assets/img/minit_karta_akce_FB_resized.jpg" class="fancybox"></a>
